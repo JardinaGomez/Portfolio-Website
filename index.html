@@ -14,9 +14,12 @@
   </head>
 
   <body oncontextmenu="return false">
+    <!--Particles effect-->
+        <div id="particles-js"></div>
+
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Venkatesh</a>
+        <a href="#" class="nav__logo">Jardina Gomez</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
@@ -52,6 +55,9 @@
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
+
+       
+
         <div class="nav__btns">
           <!-- Theme change button -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -62,9 +68,12 @@
         </div>
       </nav>
     </header>
+
     <!-- main-->
 
-    <main class="main">
+    <main class="main"> 
+      <div class="center-wrapper">
+      
       <!--========================= Home =====================-->
 
       <section class="home section" id="home">
@@ -90,7 +99,7 @@
             <div class="home__img">
               <svg
                 class="home__blob"
-                viewBox="0 0 200 187"
+                viewBox="0 0 200 207"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
               >
@@ -112,7 +121,7 @@
                   <image
                     class="home__blob-img"
                     x="-79"
-                    y="-46"
+                    y="-26"
                     xlink:href="assets/img/Pro.jpg"
                   />
                 </g>
@@ -826,6 +835,7 @@
           </form>
         </div>
       </section>
+    </div>
     </main>
 
     <!--================== Footer ===============-->
@@ -882,5 +892,8 @@
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <script src="assets/ptj.js"></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+   
+    <script src="assets/particle.js"></script>
   </body>
 </html>

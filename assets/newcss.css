@@ -68,6 +68,19 @@
     --smaller-font-size: 0.813rem;
   }
 }
+#particles-js {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background: transparent;
+}
+
+.center-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 /*================= Variables Dark Theme ===============*/
 body.dark-theme {
   /*========= HSL Color mode =========*/
