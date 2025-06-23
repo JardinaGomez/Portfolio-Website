@@ -1,129 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/newcss.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-  </head>
 
-  <body oncontextmenu="return false">
-    <!--Particles effect-->
-        <div id="particles-js"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/newcss.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+</head>
 
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Jardina Gomez</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact-Me
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
+<body oncontextmenu="return false">
+  <!--Particles effect-->
+  <div id="particles-js"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Jardina Gomez</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+            </a>
+          </li>
+          <li class="nav__item nav__dropdown">
+            <a href="projects.html" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>Projects
+              <i class="uil uil-angle-down nav__dropdown-icon"></i>
+            </a>
+            <ul class="nav__dropdown-menu">
+              <li class="nav__dropdown-item">
+                <a href="loan-management.html" class="nav__dropdown-link">Loan Management Portfolio</a>
+              </li>
+              <li class="nav__dropdown-item">
+                <a href="traducode.html" class="nav__dropdown-link">TraduCode - Chrome Extension</a>
+              </li>
+
+            </ul>
+
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact-Me
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+
+
+      <div class="nav__btns">
+        <!-- Theme change button -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
         </div>
+      </div>
+    </nav>
+  </header>
 
-       
+  <!-- main-->
 
-        <div class="nav__btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+  <main class="main">
+    <div class="center-wrapper">
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- main-->
-
-    <main class="main"> 
-      <div class="center-wrapper">
-      
       <!--========================= Home =====================-->
 
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/jardina-gomez/"
-                target="_blank"
-                class="home__social-icon"
-              >
+              <a href="https://www.linkedin.com/in/jardina-gomez/" target="_blank" class="home__social-icon">
                 <i class="uil uil-linkedin-alt home__icon"></i>
               </a>
 
-              <a
-                href="https://github.com/JardinaGomez"
-                target="_blank"
-                class="home__social-icon"
-              >
+              <a href="https://github.com/JardinaGomez" target="_blank" class="home__social-icon">
                 <i class="uil uil-github-alt home__icon"></i>
               </a>
             </div>
             <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 207"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
+              <svg class="home__blob" viewBox="0 0 200 207" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                       130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                       97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
+                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                 </mask>
                 <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                       165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                       129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="-79"
-                    y="-26"
-                    xlink:href="assets/img/Pro.jpg"
-                  />
+                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                  <image class="home__blob-img" x="-79" y="-26" xlink:href="assets/img/Pro.jpg" />
                 </g>
               </svg>
             </div>
@@ -163,28 +151,32 @@
 
           <div class="about__data">
             <p class="about__description">
-              I am a dedicated professional with a strong background in computer science and mathematics. My journey has involved diverse experiences, from automating financial reports to assisting in high-needs high school classrooms by translating computer science materials into Spanish. I've tackled programming challenges, led data analysis competitions like DataFest, and worked on projects such as Drinksity and the Registrar's Room Scheduling Assistant. With a passion for problem-solving, software development, and data analysis, I thrive in dynamic environments and am always eager to learn new technologies that enhance efficiency and innovation.
+              I am a dedicated professional with a strong background in computer science and mathematics. My journey has
+              involved diverse experiences, from automating financial reports to assisting in high-needs high school
+              classrooms by translating computer science materials into Spanish. I've tackled programming challenges,
+              led data analysis competitions like DataFest, and worked on projects such as Drinksity and the Registrar's
+              Room Scheduling Assistant. With a passion for problem-solving, software development, and data analysis, I
+              thrive in dynamic environments and am always eager to learn new technologies that enhance efficiency and
+              innovation.
             </p>
-            
+
 
             <div class="about__info">
-              <div>
-                <span class="about__info-title">08.30+</span>
+              <!-- <div>
+                <span class="about__info-title"></span>
                 <span class="about__info-name">Aggregate <br />CGPA</span>
-              </div>
+              </div> -->
 
               <div>
                 <span class="about__info-title">04+</span>
-                <span class="about__info-name"
-                  >
-                  Projects</span
-                >
+                <span class="about__info-name">
+                  Projects</span>
               </div>
 
-              <div>
+              <!-- <div>
                 <span class="about__info-title">01+</span>
                 <span class="about__info-name">Months <br />experience</span>
-              </div>
+              </div> -->
             </div>
 
             <div class="about__buttons">
@@ -215,41 +207,41 @@
 
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              
+
 
               <div class="skills__list grid">
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">C</h3>
                   </div>
-                  
+
                 </div>
-                
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Java</h3>
-                    </div>
-                    
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Java</h3>
                   </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">JavaScript</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Python</h3>
-                    </div>
-                   
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">TypeScript</h3>
-                    </div>
+
                 </div>
-                
-                
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                  </div>
+
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Python</h3>
+                  </div>
+
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">TypeScript</h3>
+                  </div>
+                </div>
+
+
               </div>
             </div>
 
@@ -270,27 +262,27 @@
                   <div class="skills__titles">
                     <h3 class="skills__name">DBMS</h3>
                   </div>
-                  
+
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">DS & Algorithms</h3>
                   </div>
-                  
+
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">OOP</h3>
                   </div>
-                  
+
                 </div>
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">OS</h3>
                   </div>
-                  
+
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -312,68 +304,60 @@
                   <div class="skills__titles">
                     <h3 class="skills__name">Git</h3>
                   </div>
-                  
+
                 </div>
-                <div class="skills__data">
+                <!-- <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">MongoDB</h3>
                   </div>
-                  
-                </div>
+
+                </div> -->
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">MySQL</h3>
                   </div>
-                  
-                </div>
+
+                  <!-- </div>
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">NextJs</h3>
                   </div>
-                  
-                </div>
-                <div class="skills__data">
+
+                </div> -->
+                  <!-- <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">NodeJs</h3>
                   </div>
-                  
-                </div>
-                
-                <div class="skills__data">
+
+                </div> -->
+
+                  <!-- <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Tailwind</h3>
                   </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MySQL</h3>
+
+                </div> -->
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">MySQL</h3>
+                    </div>
+
                   </div>
-                  
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!--==================== Qualifications ==================-->
 
-      <section
-        class="qualification__section service__section"
-        id="qualification"
-      >
+      <section class="qualification__section service__section" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My personal journey</span>
 
-        <div
-          class="qualification__container container grid services__container"
-        >
+        <div class="qualification__container container grid services__container">
           <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
+            <div class="qualification__button button--flex qualification__active" data-target="#education">
               <i class="uil uil-graduation-cap qualification__icon"></i>
               Education
             </div>
@@ -381,25 +365,18 @@
 
           <div class="qualification__sections">
             <!--====== Qualification Content 1 ======-->
-            <div
-              class="qualification__content qualifiation__active services__content"
-              data-content
-              id="education" style="padding-left:80px; padding-right:80px"
-            >
+            <div class="qualification__content qualifiation__active services__content" data-content id="education"
+              style="padding-left:80px; padding-right:80px">
               <!--====== Qualification 1 ======-->
-              <div class="qualification__data" >
+              <div class="qualification__data">
                 <div style="padding-left: 40px;">
                   <h3 class="qualification__title">High School </h3>
-                  <span class="qualification__subtitle"
-                    >Lawrence High School</span
-                  >
+                  <span class="qualification__subtitle">Lawrence High School</span>
                   <div class="qualification__calender">
                     <i class="uil uil-calendar-alt"></i>
                     - 2020
                   </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
+                  <span class="button button--flex button--small button--link services__button">
                     View More
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
@@ -411,23 +388,17 @@
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__moda-icon"></i>
                           <p>
                             Graduated as a National Honors Student
                           </p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__moda-icon"></i>
                           <p> AP Student</p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__moda-icon"></i>
                           <p> Student Athlete: &nbsp </p>
                           <ul>
                             <li>Varsity Soccer - Captain</li>
@@ -456,16 +427,12 @@
                 </div>
                 <div style="padding-left: 50px;">
                   <h3 class="qualification__title">College</h3>
-                  <span class="qualification__subtitle"
-                    > Siena College<br /></span
-                  >
+                  <span class="qualification__subtitle"> Siena College<br /></span>
                   <div class="qualification__calender">
                     <i class="uil uil-calendar-alt"></i>
                     - 2025
                   </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
+                  <span class="button button--flex button--small button--link services__button">
                     View More
                     <i class="uil uil-arrow-right button__icon"></i>
                   </span>
@@ -476,36 +443,34 @@
                       </h4>
                       <i class="uil uil-times services__modal-close"></i>
                       <ul class="services__modal-services grid">
-                       
+
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__moda-icon"></i>
                           <p><strong>B.S. in Computer Science and Mathematics(Minor)</strong></p>
-                        </li> 
+                        </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
+                          <i class="uil uil-check-circle services__moda-icon"></i>
                           <p>
-                            Studied core subjects of CS including Data Structures & Algorithms, Database Management Systems <em>(DBMS)</em>,
-                             Operating Systems, Object-Oriented Programming<em>(OOP)</em>, Software Developmentand, and Web Development.
-          
+                            Studied core subjects of CS including Data Structures & Algorithms, Database Management
+                            Systems <em>(DBMS)</em>,
+                            Operating Systems, Object-Oriented Programming<em>(OOP)</em>, Software Developmentand, and
+                            Web Development.
+
                           </p>
                         </li>
                         <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                      
-                           <div style="padding-left:10px"><h4>Academic Achievements:</h4>
-                            <ul>   
+                          <i class="uil uil-check-circle services__moda-icon"></i>
+
+                          <div style="padding-left:10px">
+                            <h4>Academic Achievements:</h4>
+                            <ul>
                               <li>Dean's List - 2023</li>
                               <li>Dean's List - 2025</li>
                               <li>Upsilon Pi Epsilon award - International Honor Society for Computing</li>
-                           <li>2020-2025: Presidential Scholarship Recipient</li>
-                           </ul></div>
-                        
+                              <li>2020-2025: Presidential Scholarship Recipient</li>
+                            </ul>
+                          </div>
+
                         </li>
                       </ul>
                     </div>
@@ -513,11 +478,11 @@
                 </div>
               </div>
 
-               <!--====== Qualification 3 ======-->
+              <!--====== Qualification 3 ======-->
               <div class="qualification__data">
-            
-                
-              </div> 
+
+
+              </div>
             </div>
           </div>
         </div>
@@ -539,15 +504,18 @@
                   Loan Management Automation System
                 </h3>
                 <p class="portfolio__description">
-                  This project involves creating an automated financial report for tracking past-due loans. The macro-driven system efficiently identifies and categorizes delinquent loans based on specified date criteria, generates accurate reports segmented by lender, and streamlines communication by automatically emailing personalized loan summaries to respective financial institutions. Enhance operational efficiency, reduce manual effort, and ensure timely follow-ups with this automated reporting tool. </p>
-                <a
-                  href="https://github.com/JardinaGomez/Loan-Automation"
-                  class="button button--flex button--small portfolio__button"
-                >
+                  This project involves creating an automated financial report for tracking past-due loans. The
+                  macro-driven system efficiently identifies and categorizes delinquent loans based on specified date
+                  criteria, generates accurate reports segmented by lender, and streamlines communication by
+                  automatically emailing personalized loan summaries to respective financial institutions. Enhance
+                  operational efficiency, reduce manual effort, and ensure timely follow-ups with this automated
+                  reporting tool. </p>
+                <a href="https://github.com/JardinaGomez/Loan-Automation"
+                  class="button button--flex button--small portfolio__button">
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-               
+
               </div>
             </div>
             <!-- ------------------------portfollio 2-------------------- -->
@@ -557,35 +525,37 @@
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  Responsive-Weather-Forecast-Website
+                  TraduCode
                 </h3>
                 <p class="portfolio__description">
-                  This project is a weather website that provides live weather
-                  updates and forecasts based on your location. Stay informed
-                  about current weather conditions, temperature, and more.
-                  Explore interactive maps, hourly/daily forecasts, and helpful
-                  insights. Stay ahead of the forecast and make the most of your
-                  day!
+                  TraduCode is an innovative Chrome extension designed to bridge the gap between Spanish and English
+                  programming languages. Developed using modern
+                  web technologies like HTML, CSS, and JavaScript, it leverages Chrome's Extension API to seamlessly
+                  integrate with the browser. The extension
+                  utilizes a comprehensive JSON-based translation dictionary to convert Spanish programming keywords and
+                  constructs into their English equivalents in
+                  real-time. <!--For developers, TraduCode employs advanced techniques such as content script injection,
+                  MutationObservers for dynamic content handling,
+                  and declarativeNetRequest for efficient ad blocking. For non-technical users, TraduCode offers an
+                  intuitive interface that allows instant
+                  translation of code snippets on web pages,making it an invaluable tool for Spanish-speaking
+                  programmers learning English-based languages or collaborating on international projects.-->
                 </p>
-                <a
-                  href="https://github.com/Venkateeshh/Weather-App"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://github.com/JardinaGomez/TraduCode"
+                  class="button button--flex button--small portfolio__button">
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://venkateeshh.github.io/Weather-App/"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <!-- <a href="https://venkateeshh.github.io/Weather-App/"
+                  class="button button--flex button--small portfolio__button">
                   See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                </a> -->
               </div>
             </div>
 
             <!-- ------------------------portfollio 3-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
+            <!-- <div class="portfolio__content grid swiper-slide">
               <img src="assets/img/portfolio2.png" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -597,24 +567,20 @@
                   playlists, and discover new music. Responsive design ensures a
                   seamless experience on any device. Contributions are welcome!
                 </p>
-                <a
-                  href="https://github.com/Venkateeshh/Spotify-Clone"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://github.com/Venkateeshh/Spotify-Clone"
+                  class="button button--flex button--small portfolio__button">
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://venkateeshh.github.io/Spotify-Clone/"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://venkateeshh.github.io/Spotify-Clone/"
+                  class="button button--flex button--small portfolio__button">
                   See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
               </div>
-            </div>
+            </div> -->
             <!-- ------------------------portfollio 4-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
+            <!-- <div class="portfolio__content grid swiper-slide">
               <img src="assets/img/portfolio3.png" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -626,25 +592,21 @@
                   The app features a simple interface, ensuring smooth
                   performance across devices..
                 </p>
-                <a
-                  href="https://github.com/Venkateeshh/Js-Language-Translator"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://github.com/Venkateeshh/Js-Language-Translator"
+                  class="button button--flex button--small portfolio__button">
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://venkateeshh.github.io/Js-Language-Translator/"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://venkateeshh.github.io/Js-Language-Translator/"
+                  class="button button--flex button--small portfolio__button">
                   See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
               </div>
-            </div>
+            </div> -->
 
             <!-- ------------------------portfollio 5-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
+            <!-- <div class="portfolio__content grid swiper-slide">
               <img src="assets/img/portfolio4.png" class="portfolio__img" />
 
               <div class="portfolio__data">
@@ -657,22 +619,18 @@
                   work by visually demonstrating their step-by-step sorting
                   process.
                 </p>
-                <a
-                  href="https://github.com/Venkateeshh/Sorting-Visualizer"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://github.com/Venkateeshh/Sorting-Visualizer"
+                  class="button button--flex button--small portfolio__button">
                   GitHub Repository
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/posts/venkatesh-kamath-_algorithmdesign-sortingvisualizer-javaprojects-activity-7095437035125043200-fWDl?utm_source=share&utm_medium=member_desktop"
-                  class="button button--flex button--small portfolio__button"
-                >
+                <a href="https://www.linkedin.com/posts/venkatesh-kamath-_algorithmdesign-sortingvisualizer-javaprojects-activity-7095437035125043200-fWDl?utm_source=share&utm_medium=member_desktop"
+                  class="button button--flex button--small portfolio__button">
                   See Live
                   <i class="uil uil-external-link-alt button__icon"></i>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <!-- add arrows -->
@@ -699,9 +657,7 @@
 
               <div>
                 <h3 class="contact__title">Contact Me</h3>
-                <span class="contact__subtitle"
-                  ><a href="tel:5165821600"></a>516-582-1600</span
-                >
+                <span class="contact__subtitle"><a href="tel:5165821600"></a>516-582-1600</span>
               </div>
             </div>
 
@@ -710,9 +666,7 @@
 
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle"
-                  >ja19gome@siena.com</span
-                >
+                <span class="contact__subtitle">ja19gome@siena.com</span>
               </div>
             </div>
 
@@ -721,9 +675,7 @@
 
               <div>
                 <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle"
-                  >New York, United States</span
-                >
+                <span class="contact__subtitle">New York, United States</span>
               </div>
             </div>
           </div>
@@ -743,20 +695,12 @@
 
             <div class="contact__content">
               <label for="" class="content__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
+              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
             </div>
 
             <div>
-              <a
-                href=" mailto: ja19gome@siena.edu?subject=Testing out mailto! &body=This is only a test!"
-                class="button button--flex"
-              >
+              <a href=" mailto: ja19gome@siena.edu?subject=Testing out mailto! &body=This is only a test!"
+                class="button button--flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </a>
@@ -765,64 +709,54 @@
         </div>
       </section>
     </div>
-    </main>
+  </main>
 
-    <!--================== Footer ===============-->
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Jardina</h1>
-            <span class="footer__subtitle"
-              >Information Science Engineering Student</span
-            >
-          </div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#qualification" class="footer__link">Qualification</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact-Me</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.instagram.com/venkateeshh/"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a
-              href="https://twitter.com/Venkateeshhh"
-              target="__blank"
-              class="footer__social"
-            >
-            <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </div>
+  <!--================== Footer ===============-->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Jardina</h1>
+          <span class="footer__subtitle">Information Science Engineering Student</span>
         </div>
 
-        <p class="footer__copy">&#169; Jardina. All right reserved</p>
+        <ul class="footer__links">
+          <li>
+            <a href="#qualification" class="footer__link">Qualification</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact-Me</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://twitter.com/Venkateeshhh" target="__blank" class="footer__social">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
       </div>
-    </footer>
 
-    <!--================== SCROLL TOP ==================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+      <p class="footer__copy">&#169; Jardina. All right reserved</p>
+    </div>
+  </footer>
 
-    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
-    <script src="assets/ptj.js"></script>
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
-   
-    <script src="assets/particle.js"></script>
-  </body>
+  <!--================== SCROLL TOP ==================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+  <script src="assets/ptj.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+
+  <script src="assets/particle.js"></script>
+</body>
+
 </html>
