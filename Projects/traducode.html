@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TraduCode – Chrome Extension | Jardina Gomez</title>
+
+    <!-- ===== Shared styles / libs ===== -->
+    <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/newcss.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <!-- ===== TraduCode showcase styles ===== -->
+    <link rel="stylesheet" href="../assets/css/tradu.css" />
+</head>
+
+<body oncontextmenu="return false">
+    <div id="particles-js"></div>
+
+    <!-- ============ NAVBAR (unchanged) ============ -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">Jardina Gomez</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="../index.html#home" class="nav__link"><i
+                                class="uil uil-estate nav__icon"></i>Home</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link"><i
+                                class="uil uil-user nav__icon"></i>About</a></li>
+                    <li class="nav__item"><a href="../index.html#skills" class="nav__link"><i
+                                class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+                    <li class="nav__item"><a href="../index.html#qualification" class="nav__link"><i
+                                class="uil uil-briefcase-alt nav__icon"></i>Qualification</a></li>
+
+                    <li class="nav__item nav__dropdown">
+                        <a class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects <i
+                                class="uil uil-angle-down nav__dropdown-icon"></i></a>
+                        <ul class="nav__dropdown-menu">
+                            <li class="nav__dropdown-item"><a href="loan-management.html"
+                                    class="nav__dropdown-link">Loan Management Portfolio</a></li>
+                            <li class="nav__dropdown-item"><a href="traducode.html"
+                                    class="nav__dropdown-link active-link">TraduCode – Chrome Extension</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item"><a href="../index.html#contact" class="nav__link"><i
+                                class="uil uil-message nav__icon"></i>Contact-Me</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main">
+        <section class="hero">
+            <img src="../assets/img/Traducode_FINAL.png" alt="TraduCode Logo" class="logo" />
+            <h1 class="tagline">Bridging&nbsp;the&nbsp;Gap</h1>
+        </section>
+
+        <!-- ------------- TraduCode Carousel ------------- -->
+        <section class="carousel-wrapper">
+            <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+
+            <div id="carousel" class="carousel">
+                <!-- slides 1-6 from previous answer -->
+                <!-- Slide 1 -->
+                <article class="slide active">
+                    <h2><span class="accent">&lt;if&gt;</span> Instant Keyword Translation</h2>
+                    <p>Hover over any Python, JS, or HTML snippet and see core syntax words morph into clear Spanish in
+                        real time—no page reloads.</p>
+                </article>
+                <!-- Slide 2 -->
+                <article class="slide">
+                    <h2><span class="accent">&lt;while&gt;</span> Context-Aware Tooltips</h2>
+                    <p>TraduCode tells comments from code, translating only the right bits. Tooltips give
+                        beginner-friendly hints.</p>
+                </article>
+                <!-- Slide 3 -->
+                <article class="slide">
+                    <h2><span class="accent">&lt;for&gt;</span> Multi-Language Road-Map</h2>
+                    <p>Spanish today—French, Mandarin &amp; Portuguese next. New languages snap in via pluggable
+                        dictionaries.</p>
+                </article>
+                <!-- Slide 4 -->
+                <article class="slide">
+                    <h2><span class="accent">&lt;else&gt;</span> Lightweight &amp; Secure</h2>
+                    <p>Runs 100 % client-side with a footprint under 60 KB. Perfect for classrooms with strict privacy
+                        rules.</p>
+                </article>
+                <!-- Slide 5 -->
+                <article class="slide">
+                    <h2><span class="accent">&lt;try&gt;</span> Modular Architecture</h2>
+                    <p>Popup UI, Background, Content Script—each talks through Chrome messaging for zero coupling.</p>
+                </article>
+                <!-- Slide 6 -->
+                <article class="slide">
+                    <h2><span class="accent">&lt;finally&gt;</span> Proven Design Patterns</h2>
+                    <p>Observer, Strategy, Adapter &amp; Singleton keep the codebase small, testable, and ready for
+                        scale.</p>
+                </article>
+            </div>
+
+            <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+        </section>
+
+        <!-- ------------- Tech Peek Panel ------------- -->
+        <button class="peek-btn" onclick="togglePeek()">🛠 Tech Peek</button>
+        <div id="peekPanel" class="peek-panel">
+            <h3>Under the Hood (safe version)</h3>
+            <ul>
+                <li><strong>Languages:</strong> modern JavaScript, bundled—no bulky runtime libs</li>
+                <li><strong>Security:</strong> all logic stays in the browser</li>
+                <li><strong>Performance:</strong> average tooltip render &lt; 2 ms</li>
+                <li><strong>Privacy:</strong> zero network calls, zero telemetry</li>
+                <li><strong>IP:</strong> core parsing &amp; translation tricks are confidential</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- ============ SHARED SCRIPTS ============ -->
+    <script type="text/javascript" src="../assets/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="../assets/ptj.js"></script>
+    <script src="../assets/particle.js"></script>
+    <script src="../assets/particles.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+
+    <!-- ============ TraduCode carousel / peek ============ -->
+    <script src="traducode.js"></script>
+</body>
+
+</html>

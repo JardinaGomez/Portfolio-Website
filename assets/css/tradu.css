@@ -1,0 +1,195 @@
+/* ===== Custom properties for easy tweaking ===== */
+:root {
+  --bg: #0b1a24;
+  --cyan: #00e7ff;
+  --cyan-glow: 0 0 20px #00e7ff77, 0 0 40px #00e7ffaa;
+  --accent-red: #ff4040;
+  --text: #dfe9f3;
+  --radius: 1.25rem;
+  --orbit: "Orbitron", "Segoe UI", sans-serif;
+  --header-h: 4rem; /* height of the header */
+}
+
+#particles-js {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  inset:0;
+  z-index: 0;
+  
+  pointer-events: none;;
+  background: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* enable smooth scrolling */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+   
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--orbit);
+  display: grid;
+  place-items: center;
+  gap: 4rem;
+  padding: 2rem 1rem 6rem;
+
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  text-align: center;
+  position: relative;
+}
+
+main.main, section.hero { 
+    margin-top: var(--header-h)
+}
+
+.logo {
+  width: min(90vw, 360px);
+  filter: drop-shadow(0 0 30px #00e7ff88);
+}
+
+.tagline {
+  margin: 1rem 0 ;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 12px #00e7ff55;
+}
+
+/* ---------- CAROUSEL ---------- */
+.carousel-wrapper {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 2px solid var(--cyan);
+  box-shadow: var(--cyan-glow);
+}
+
+.slide {
+  min-width: 100%;
+  padding: 3rem 2rem 4rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 3vw, 1.75rem);
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--accent-red);
+}
+.hero,
+.carousel-wrapper {
+  /* remove any accidental full-height constraints */
+  min-height: unset !important;
+}
+
+/* optional: small breathing room so the glow isn’t glued to the navbar */
+.carousel-wrapper {
+  margin-top: 1.5rem;
+}
+
+/* ---------- NAV BUTTONS ---------- */
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--cyan);
+  font-size: 2.25rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-btn:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+.chev {
+  line-height: 1;
+  text-shadow: var(--cyan-glow);
+}
+
+/* ---------- Glow pulse animation ---------- */
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: var(--cyan-glow);
+  }
+  50% {
+    box-shadow: 0 0 10px #00e7ff44, 0 0 20px #00e7ff88;
+  }
+}
+
+.logo,
+.carousel {
+  animation: pulse 6s infinite;
+}
+
+/* ---------- Peek Panel ---------- */
+.peek-btn {
+  margin: 2rem auto 0;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--orbit);
+  font-size: 0.9rem;
+  color: var(--cyan);
+  background: transparent;
+  border: 1px solid var(--cyan);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.25s;
+  /* bring to center */
+    display: block;
+}
+.peek-btn:hover {
+  background: #00e7ff22;
+}
+
+.peek-panel {
+  width: 100%;
+  max-width: 680px;
+  margin: 1.2rem auto 0;
+  padding: 1.5rem 2rem;
+  background: #112531;
+  border: 1px solid #00e7ff44;
+  border-radius: var(--radius);
+  display: none;        /* hidden by default */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.peek-panel h3 { margin-top: 0; }
+.peek-panel ul { padding-left: 1.2rem; margin: 0; }
