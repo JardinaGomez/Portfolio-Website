@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="../assets/css/tradu.css" />
 </head>
 
-<body oncontextmenu="return false">
+<body class="traducode-page" oncontextmenu="return false">
+
+    <!-- particles background -->
     <div id="particles-js"></div>
 
     <!-- ============ NAVBAR (unchanged) ============ -->
@@ -61,82 +63,209 @@
     </header>
 
     <!-- ============ MAIN CONTENT ============ -->
-    <main class="main">
-        <section class="hero">
-            <img src="../assets/img/Traducode_FINAL.png" alt="TraduCode Logo" class="logo" />
-            <h1 class="tagline">Bridging&nbsp;the&nbsp;Gap</h1>
-        </section>
+    <main class="main traducode">
+        <div class="center-wrapper">
+            <h1 class="main__title">TraduCode</h1>
 
-        <!-- ------------- TraduCode Carousel ------------- -->
-        <section class="carousel-wrapper">
-            <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+            <section class="hero">
+                <div class="hero__wrap">
+                    <img src="../assets/img/Traducode_FINAL.png" alt="TraduCode Logo" class="logo" />
+                    <section>
+                        <h1 class="tagline">Bridging&nbsp;the&nbsp;Gap</h1>
+                        <p class="main__description">
+                            Inspired by Alex, a student navigating the dual barriers of language and programming,
+                            TraduCode began as a tool to support Spanish-speaking
+                            learners by instantly translating coding keywords from English to Spanish. Today, it's
+                            evolved into a versatile Chrome extension capable of supporting
+                            multiple languages, including French, Mandarin, and Portuguese. TraduCode empowers diverse
+                            learners worldwide, significantly reducing cognitive
+                            overload and creating an inclusive, accessible environment for mastering programming
+                            concepts. With its intuitive, context-aware translations and lightweight,
+                            offline-first design, TraduCode ensures seamless learning without linguistic barriers.
+                        </p>
+                    </section>
+                </div>
+            </section>
 
-            <div id="carousel" class="carousel">
-                <!-- slides 1-6 from previous answer -->
-                <!-- Slide 1 -->
-                <article class="slide active">
-                    <h2><span class="accent">&lt;if&gt;</span> Instant Keyword Translation</h2>
-                    <p>Hover over any Python, JS, or HTML snippet and see core syntax words morph into clear Spanish in
-                        real time—no page reloads.</p>
+
+            <!-- Research Section -->
+            <section class="research-section container">
+                <h2 class="section__title">Research & Impact</h2>
+
+                <!-- Poster Embed -->
+                <div class="research-poster">
+                    <h3 class="poster-title">Research Poster Presentation</h3>
+                    <iframe src="../assets/docs/TraduCode.pdf" width="100%" height="600px"></iframe>
+                </div>
+
+                <!-- Abstract -->
+                <article class="research-abstract">
+                    <h3 class="abstract-title">Project Abstract</h3>
+                    <p>
+                        In 2021, one out of four students in public schools came from immigrant-headed households,
+                        highlighting the rapid growth of multilingual student populations. English learners, primarily
+                        Hispanic students, represent one of the fastest-growing demographics, yet educational resources
+                        remain insufficient. TraduCode addresses the linguistic challenges Spanish-speaking students
+                        face when learning programming by translating Python keywords into Spanish in real-time,
+                        reducing cognitive load and boosting student confidence. The extension aims to expand across
+                        more platforms and languages to further bridge educational accessibility gaps.
+                    </p>
+                    <a href="../assets/docs/TraduCode Abstract.pdf" class="button" target="_blank">
+                        View Full Abstract
+                    </a>
                 </article>
-                <!-- Slide 2 -->
-                <article class="slide">
-                    <h2><span class="accent">&lt;while&gt;</span> Context-Aware Tooltips</h2>
-                    <p>TraduCode tells comments from code, translating only the right bits. Tooltips give
-                        beginner-friendly hints.</p>
-                </article>
-                <!-- Slide 3 -->
-                <article class="slide">
-                    <h2><span class="accent">&lt;for&gt;</span> Multi-Language Road-Map</h2>
-                    <p>Spanish today—French, Mandarin &amp; Portuguese next. New languages snap in via pluggable
-                        dictionaries.</p>
-                </article>
-                <!-- Slide 4 -->
-                <article class="slide">
-                    <h2><span class="accent">&lt;else&gt;</span> Lightweight &amp; Secure</h2>
-                    <p>Runs 100 % client-side with a footprint under 60 KB. Perfect for classrooms with strict privacy
-                        rules.</p>
-                </article>
-                <!-- Slide 5 -->
-                <article class="slide">
-                    <h2><span class="accent">&lt;try&gt;</span> Modular Architecture</h2>
-                    <p>Popup UI, Background, Content Script—each talks through Chrome messaging for zero coupling.</p>
-                </article>
-                <!-- Slide 6 -->
-                <article class="slide">
-                    <h2><span class="accent">&lt;finally&gt;</span> Proven Design Patterns</h2>
-                    <p>Observer, Strategy, Adapter &amp; Singleton keep the codebase small, testable, and ready for
-                        scale.</p>
-                </article>
+
+                <!-- Quotes Carousel -->
+                <div class="quotes-carousel swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Quote 1 -->
+                        <div class="swiper-slide quote-slide">
+                            <blockquote>
+                                “Availability and accessibility are not the same, and they’re not interchangeable. If a
+                                course is available but not in your language, the process for learning is different. It
+                                can be taxing and even physically exhausting. Having resources in Spanish makes a
+                                massive difference.”
+                            </blockquote>
+                            <cite>- De Jesús, Carnegie Mellon University</cite>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="swiper-slide quote-slide">
+                            <blockquote>
+                                “We found that non-native English speakers faced barriers with reading instructional
+                                materials, technical communication, reading and writing code, and simultaneously
+                                learning English and programming.”
+                            </blockquote>
+                            <cite>- UC San Diego, 2018 Study</cite>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="swiper-slide quote-slide">
+                            <blockquote>
+                                “About 15 percent of U.S. residents are native Spanish speakers, and that percentage has
+                                grown 40 percent year-over-year since 2009. Educational programs celebrate enrolling
+                                these diverse students, yet barriers to learning remain.”
+                            </blockquote>
+                            <cite>- Carnegie Mellon University</cite>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- ------------- TraduCode Carousel ------------- -->
+            <section class="carousel-wrapper">
+                <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+
+                <div id="carousel" class="carousel">
+                    <!-- slides 1-6 from previous answer -->
+                    <!-- Slide 1 -->
+                    <article class="slide active">
+                        <h2><span class="accent">&lt;if&gt;</span> Instant Keyword Translation</h2>
+                        <p>Hover over any Python, JS, or HTML snippet and see core syntax words morph into clear Spanish
+                            in
+                            real time—no page reloads.</p>
+                    </article>
+                    <!-- Slide 2 -->
+                    <article class="slide">
+                        <h2><span class="accent">&lt;while&gt;</span> Context-Aware Tooltips</h2>
+                        <p>TraduCode tells comments from code, translating only the right bits. Tooltips give
+                            beginner-friendly hints.</p>
+                    </article>
+                    <!-- Slide 3 -->
+                    <article class="slide">
+                        <h2><span class="accent">&lt;for&gt;</span> Multi-Language Road-Map</h2>
+                        <p>Spanish today—French, Mandarin &amp; Portuguese next. New languages snap in via pluggable
+                            dictionaries.</p>
+                    </article>
+                    <!-- Slide 4 -->
+                    <article class="slide">
+                        <h2><span class="accent">&lt;else&gt;</span> Lightweight &amp; Secure</h2>
+                        <p>Runs 100 % client-side with a footprint under 60 KB. Perfect for classrooms with strict
+                            privacy
+                            rules.</p>
+                    </article>
+                    <!-- Slide 5 -->
+                    <article class="slide">
+                        <h2><span class="accent">&lt;try&gt;</span> Modular Architecture</h2>
+                        <p>Popup UI, Background, Content Script—each talks through Chrome messaging for zero coupling.
+                        </p>
+                    </article>
+                    <!-- Slide 6 -->
+                    <article class="slide">
+                        <h2><span class="accent">&lt;finally&gt;</span> Proven Design Patterns</h2>
+                        <p>Observer, Strategy, Adapter &amp; Singleton keep the codebase small, testable, and ready for
+                            scale.</p>
+                    </article>
+                </div>
+
+                <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+            </section>
+
+            <!-- ------------- Tech Peek Panel ------------- -->
+            <button class="peek-btn" onclick="togglePeek()">🛠 Tech Peek</button>
+            <div id="peekPanel" class="peek-panel">
+                <h3>Under the Hood (safe version)</h3>
+                <ul>
+                    <li><strong>Languages:</strong> modern JavaScript, bundled—no bulky runtime libs</li>
+                    <li><strong>Security:</strong> all logic stays in the browser</li>
+                    <li><strong>Performance:</strong> average tooltip render &lt; 2 ms</li>
+                    <li><strong>Privacy:</strong> zero network calls, zero telemetry</li>
+                    <li><strong>IP:</strong> core parsing &amp; translation tricks are confidential</li>
+                </ul>
             </div>
-
-            <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
-        </section>
-
-        <!-- ------------- Tech Peek Panel ------------- -->
-        <button class="peek-btn" onclick="togglePeek()">🛠 Tech Peek</button>
-        <div id="peekPanel" class="peek-panel">
-            <h3>Under the Hood (safe version)</h3>
-            <ul>
-                <li><strong>Languages:</strong> modern JavaScript, bundled—no bulky runtime libs</li>
-                <li><strong>Security:</strong> all logic stays in the browser</li>
-                <li><strong>Performance:</strong> average tooltip render &lt; 2 ms</li>
-                <li><strong>Privacy:</strong> zero network calls, zero telemetry</li>
-                <li><strong>IP:</strong> core parsing &amp; translation tricks are confidential</li>
-            </ul>
         </div>
     </main>
+    <!--================== Footer ===============-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Jardina</h1>
+                    <span class="footer__subtitle">Information Science Engineering Student</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualification</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact-Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/Venkateeshhh" target="__blank" class="footer__social">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Jardina. All right reserved</p>
+        </div>
+    </footer>
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
 
     <!-- ============ SHARED SCRIPTS ============ -->
     <script type="text/javascript" src="../assets/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <script src="../assets/ptj.js"></script>
-    <script src="../assets/particle.js"></script>
+
+    <!-- Particles.js library and configuration -->
     <script src="../assets/particles.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+    <script src="../assets/particle.js"></script>
 
     <!-- ============ TraduCode carousel / peek ============ -->
     <script src="traducode.js"></script>
+
 </body>
 
 </html>

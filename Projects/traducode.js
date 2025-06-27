@@ -23,6 +23,29 @@ setInterval(() => {
   updateSlides();
 }, 9000);
 
+/* ─── Swiper instance for TraduCode feature slider ─── */
+const tcSwiper = new Swiper('.tcSwiper', {
+  loop: true,
+  speed: 600,
+  grabCursor: true,
+  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+  pagination: { el: '.swiper-pagination', clickable: true },
+});
+
+// Initialize Quotes Carousel
+const quoteSwiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: {
+        delay: 9000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
 
 // ----- PEEK PANEL -----
 function togglePeek() {

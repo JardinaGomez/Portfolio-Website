@@ -1,23 +1,27 @@
 /* ===== Custom properties for easy tweaking ===== */
 :root {
-  --bg: #0b1a24;
+  --hue-color: 240;
+
+  --bg: hsl(var(--hue-color), 28%, 12%);
   --cyan: #00e7ff;
   --cyan-glow: 0 0 20px #00e7ff77, 0 0 40px #00e7ffaa;
   --accent-red: #ff4040;
   --text: #dfe9f3;
   --radius: 1.25rem;
-  --orbit: "Orbitron", "Segoe UI", sans-serif;
-  --header-h: 4rem; /* height of the header */
+  --orbit: "Poppins", "sans-serif";
+  --header-h: 4rem;
+  /* height of the header */
 }
 
 #particles-js {
   position: fixed;
   height: 100vh;
   width: 100%;
-  inset:0;
-  z-index: 0;
-  
-  pointer-events: none;;
+  inset: 0;
+  z-index: -1;
+
+  pointer-events: none;
+
   background: transparent;
 }
 
@@ -31,17 +35,92 @@ body {
   /* enable smooth scrolling */
   overflow-y: auto;
   scroll-behavior: smooth;
-   
+
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--orbit);
-  display: grid;
-  place-items: center;
+
   gap: 4rem;
   padding: 2rem 1rem 6rem;
-
+  /* Account for fixed header at top */
+  padding-top: calc(var(--header-h));
 }
+
+/* Research section styling */
+.research-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.research-poster,
+.research-abstract {
+  margin-bottom: 3rem;
+}
+
+.poster-title,
+.abstract-title {
+  color: var(--cyan);
+  margin-bottom: 1rem;
+}
+
+.research-abstract p {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--cyan);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-red);
+}
+
+/* Quotes carousel */
+.quotes-carousel {
+  margin-top: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote-slide blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.5;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--cyan);
+}
+
+.quote-slide cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-red);
+}
+
+
+
+/* Override the main site's header positioning for TraduCode page */
+/* .header {
+  position: fixed !important;
+  top: 0 !important;
+  bottom: unset !important;
+  z-index: 1000;
+  background-color: var(--bg) !important;
+  border-bottom: 1px solid var(--cyan);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+} */
 
 /* ---------- HERO ---------- */
 .hero {
@@ -49,17 +128,19 @@ body {
   position: relative;
 }
 
-main.main, section.hero { 
-    margin-top: var(--header-h)
-}
 
 .logo {
   width: min(90vw, 360px);
   filter: drop-shadow(0 0 30px #00e7ff88);
+  display: block;
+  margin-left: 40px;
+  margin-right: auto;
+  border-radius: var(--radius);
+
 }
 
 .tagline {
-  margin: 1rem 0 ;
+  margin: 1rem 0;
   font-weight: 400;
   font-size: clamp(1.5rem, 4vw, 2.4rem);
   letter-spacing: 0.05em;
@@ -68,9 +149,14 @@ main.main, section.hero {
 
 /* ---------- CAROUSEL ---------- */
 .carousel-wrapper {
+
   width: 100%;
   max-width: 700px;
-  position: relative;
+  /* place center */
+
+  margin: 0 auto;
+
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +179,7 @@ main.main, section.hero {
   justify-content: center;
   text-align: center;
   gap: 1.25rem;
+
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -110,6 +197,7 @@ main.main, section.hero {
 .accent {
   color: var(--accent-red);
 }
+
 .hero,
 .carousel-wrapper {
   /* remove any accidental full-height constraints */
@@ -121,7 +209,34 @@ main.main, section.hero {
   margin-top: 1.5rem;
 }
 
-/* ---------- NAV BUTTONS ---------- */
+/* ─── hero layout ───────────────────────── */
+.hero__wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* stack on narrow screens */
+  padding: 0 4rem;
+  /* horizontal padding */
+}
+
+.main__title {
+  font-family: var(--orbit);
+  place-self: center;
+  padding: 1rem 1rem 2rem;
+}
+
+.main__description {
+  max-width: 500px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  /* reset default p-margin */
+}
+
+
+/* ---------- NAV BUTTONS - for coursek ---------- */
 .nav-btn {
   background: transparent;
   border: none;
@@ -146,10 +261,12 @@ main.main, section.hero {
 
 /* ---------- Glow pulse animation ---------- */
 @keyframes pulse {
+
   0%,
   100% {
     box-shadow: var(--cyan-glow);
   }
+
   50% {
     box-shadow: 0 0 10px #00e7ff44, 0 0 20px #00e7ff88;
   }
@@ -173,8 +290,9 @@ main.main, section.hero {
   cursor: pointer;
   transition: background 0.25s;
   /* bring to center */
-    display: block;
+  display: block;
 }
+
 .peek-btn:hover {
   background: #00e7ff22;
 }
@@ -187,9 +305,140 @@ main.main, section.hero {
   background: #112531;
   border: 1px solid #00e7ff44;
   border-radius: var(--radius);
-  display: none;        /* hidden by default */
+  display: none;
+  /* hidden by default */
   font-size: 0.9rem;
   line-height: 1.5;
 }
-.peek-panel h3 { margin-top: 0; }
-.peek-panel ul { padding-left: 1.2rem; margin: 0; }
+
+.peek-panel h3 {
+  margin-top: 0;
+}
+
+.peek-panel ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+/* ────────────────────────────────────────────────
+   TraduCode project-page slider + hero
+   (no variables duplicated, all reuse the originals)
+────────────────────────────────────────────────── */
+
+.tc-hero {
+  /* image | about text */
+  margin-top: calc(var(--header-h) + 2rem);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.tc-hero img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.tc-hero__headline {
+  margin: 1.2rem 0 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.03em;
+  color: var(--cyan);
+}
+
+.tc-hero__about h3 {
+  margin-bottom: 0.8rem;
+  color: var(--accent-red);
+}
+
+.tc-wave {
+  /* curved divider */
+  width: 100%;
+  height: 60px;
+  background: var(--bg);
+  border-top-left-radius: 60% 100%;
+  border-top-right-radius: 60% 100%;
+  margin-top: -30px;
+  /* overlap */
+}
+
+/* ========== slider ========== */
+.tc-slider {
+  padding: 4rem 0 6rem;
+}
+
+.swiper.tcSwiper {
+  width: 100%;
+  max-width: 960px;
+}
+
+.tc-slide {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.tc-slide img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.tc-slide__text h3 {
+  margin: 0 0 0.75rem;
+  color: var(--cyan);
+}
+
+.tc-slide__text p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* nav arrows inherit cyan + glow */
+.tc-nav.swiper-button-prev,
+.tc-nav.swiper-button-next {
+  color: var(--cyan);
+  text-shadow: var(--cyan-glow);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--cyan);
+}
+
+/* ======= responsive ======= */
+@media (max-width: 768px) {
+  .tc-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .tc-slide {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .tc-slide img {
+    margin: 0 auto;
+
+  }
+
+  @media (max-width: 600px) {
+    .hero__wrap {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+/* Center wrapper styling for TraduCode page */
+.center-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark theme support for center-wrapper */
+.dark-theme .center-wrapper {
+  background-color: rgba(11, 9, 28, 0.8);
+}
