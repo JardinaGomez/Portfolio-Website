@@ -70,22 +70,45 @@
             <section class="hero">
                 <div class="hero__wrap">
                     <img src="../assets/img/Traducode_FINAL.png" alt="TraduCode Logo" class="logo" />
-                    <section>
-                        <h1 class="tagline">Bridging&nbsp;the&nbsp;Gap</h1>
+                    <div class="what-is">
+                        <h2>What is it?</h2>
                         <p class="main__description">
-                            Inspired by Alex, a student navigating the dual barriers of language and programming,
+                            TraduCode was designed to be a tool to empower non-english speaking students trying to learn
+                            programming.
+                            It is a Chrome extension designed to translate programming syntax into the language chosen
+                            by the user in real-time,
+                            leveling the playing field so learning to code doesn’t require fluency in English first.
+                        <div class="quote-block">
+                            <blockquote>
+                                " <span class="quote-key"> <em>Availability</em></span> and <span
+                                    class="quote-key">Accessibility</span> are <span style="color: crimson;">NOT</span>
+                                the same, and they're not interchangeable. If a
+                                course is available but not in your language, the process for learning is different. It
+                                can be taxing and even physically exhausting."
+                            </blockquote>
+                            <cite>- De Jesús, Carnegie Mellon University</cite>
+                        </div>
+
+                    </div>
+
+                    <section class="gap_class">
+                        <h1 class="tagline">Bridging&nbsp;the&nbsp;Gap</h1>
+                        <p class="gap_description">
+                            Inspired by Alex, a student navigating the dual barriers of a new language and programming,
                             TraduCode began as a tool to support Spanish-speaking
                             learners by instantly translating coding keywords from English to Spanish. Today, it's
                             evolved into a versatile Chrome extension capable of supporting
                             multiple languages, including French, Mandarin, and Portuguese. TraduCode empowers diverse
                             learners worldwide, significantly reducing cognitive
-                            overload and creating an inclusive, accessible environment for mastering programming
+                            overload and creating an inclusive, accessible environment for learning programming
                             concepts. With its intuitive, context-aware translations and lightweight,
                             offline-first design, TraduCode ensures seamless learning without linguistic barriers.
                         </p>
                     </section>
                 </div>
             </section>
+
+            <!-- First Quote -->
 
 
             <!-- Research Section -->
@@ -115,89 +138,85 @@
                     </a>
                 </article>
 
-                <!-- Quotes Carousel -->
-                <div class="quotes-carousel swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <!-- Quote 1 -->
-                        <div class="swiper-slide quote-slide">
-                            <blockquote>
-                                “Availability and accessibility are not the same, and they’re not interchangeable. If a
-                                course is available but not in your language, the process for learning is different. It
-                                can be taxing and even physically exhausting. Having resources in Spanish makes a
-                                massive difference.”
-                            </blockquote>
-                            <cite>- De Jesús, Carnegie Mellon University</cite>
-                        </div>
-                        <!-- Quote 2 -->
-                        <div class="swiper-slide quote-slide">
-                            <blockquote>
-                                “We found that non-native English speakers faced barriers with reading instructional
-                                materials, technical communication, reading and writing code, and simultaneously
-                                learning English and programming.”
-                            </blockquote>
-                            <cite>- UC San Diego, 2018 Study</cite>
-                        </div>
-                        <!-- Quote 3 -->
-                        <div class="swiper-slide quote-slide">
-                            <blockquote>
-                                “About 15 percent of U.S. residents are native Spanish speakers, and that percentage has
-                                grown 40 percent year-over-year since 2009. Educational programs celebrate enrolling
-                                these diverse students, yet barriers to learning remain.”
-                            </blockquote>
-                            <cite>- Carnegie Mellon University</cite>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+
+
+
             </section>
-            <!-- ------------- TraduCode Carousel ------------- -->
+
+            <!-- Second Quote -->
+            <div class="quote-block">
+                <blockquote>
+                    "Barriers range from <span class="quote-key"><em>cognitive</em></span> to <span class="quote-key"><em>affective</em></span> to <span class="quote-key"><em>social</em></span>: Needing to mentally translate concepts into one’s native 
+                    language...increases extraneous cognitive load and <span style="font-size: xx-small">decreases</span> comprehension. "
+                </blockquote>
+                <cite>- UC San Diego, 2018 Study</cite>
+            </div>
+            <!-- TraduCode Features Carousel Section -->
             <section class="carousel-wrapper">
-                <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+                <h2 class="section__title">
+                    TraduCode Highlights
+                </h2>
+                
+                <section class="carousel-container">
+                    <!-- Navigation buttons -->
+                  <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+
 
                 <div id="carousel" class="carousel">
-                    <!-- slides 1-6 from previous answer -->
+                  
                     <!-- Slide 1 -->
                     <article class="slide active">
-                        <h2><span class="accent">&lt;if&gt;</span> Instant Keyword Translation</h2>
-                        <p>Hover over any Python, JS, or HTML snippet and see core syntax words morph into clear Spanish
-                            in
-                            real time—no page reloads.</p>
+                        <h2>Instant Keyword Translation</h2>
+                        <p>Hover over any Python snippet and see core syntax words translated in real
+                            time—no page reloads required.</p>
                     </article>
                     <!-- Slide 2 -->
                     <article class="slide">
-                        <h2><span class="accent">&lt;while&gt;</span> Context-Aware Tooltips</h2>
-                        <p>TraduCode tells comments from code, translating only the right bits. Tooltips give
-                            beginner-friendly hints.</p>
+                        <h2>Context-Aware Tooltips</h2>
+                        <p>TraduCode identifies code vs. comments and translates only relevant parts. Tooltips offer
+                            beginner-friendly hints without clutter.</p>
                     </article>
                     <!-- Slide 3 -->
                     <article class="slide">
-                        <h2><span class="accent">&lt;for&gt;</span> Multi-Language Road-Map</h2>
-                        <p>Spanish today—French, Mandarin &amp; Portuguese next. New languages snap in via pluggable
-                            dictionaries.</p>
+                        <h2>Multi-Language Expansion</h2>
+                        <p>Started with Spanish, now expanding to French, Mandarin, and Portuguese via pluggable
+                            translation dictionaries.</p>
                     </article>
                     <!-- Slide 4 -->
                     <article class="slide">
-                        <h2><span class="accent">&lt;else&gt;</span> Lightweight &amp; Secure</h2>
-                        <p>Runs 100 % client-side with a footprint under 60 KB. Perfect for classrooms with strict
-                            privacy
-                            rules.</p>
+                        <h2>Client-Side & Secure</h2>
+                        <p>Everything runs in the browser with no network calls, ensuring privacy. The extension stays
+                            lightweight—under 60 KB.</p>
                     </article>
                     <!-- Slide 5 -->
                     <article class="slide">
-                        <h2><span class="accent">&lt;try&gt;</span> Modular Architecture</h2>
-                        <p>Popup UI, Background, Content Script—each talks through Chrome messaging for zero coupling.
-                        </p>
+                        <h2>Modular Chrome Architecture</h2>
+                        <p>Popup, background, and content scripts communicate through clean message passing, ensuring
+                            maintainability and flexibility.</p>
                     </article>
                     <!-- Slide 6 -->
                     <article class="slide">
-                        <h2><span class="accent">&lt;finally&gt;</span> Proven Design Patterns</h2>
-                        <p>Observer, Strategy, Adapter &amp; Singleton keep the codebase small, testable, and ready for
-                            scale.</p>
+                        <h2>Scalable Design Patterns</h2>
+                        <p>Built using Strategy, Observer, Adapter, and Singleton patterns for a robust, testable, and
+                            extensible codebase.</p>
                     </article>
-                </div>
 
-                <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+
+                       </div>
+                   <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+          </section>
             </section>
+
+
+            <!-- Third Quote -->
+            <div class="quote-block">
+                <blockquote>
+                    "About 15 percent of U.S. residents are native Spanish speakers, and that percentage has
+                    grown 40 percent year-over-year since 2009. Educational programs celebrate enrolling
+                    these diverse students, yet barriers to learning remain."
+                </blockquote>
+                <cite>- Carnegie Mellon University</cite>
+            </div>
 
             <!-- ------------- Tech Peek Panel ------------- -->
             <button class="peek-btn" onclick="togglePeek()">🛠 Tech Peek</button>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Loan Automation Report | Jardina Gomez</title>
+  <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/newcss.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="../assets/css/loanReport.css" />
+</head>
+
+<body class="traducode-page" oncontextmenu="return false">
+  <div id="particles-js"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">Jardina Gomez</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="../index.html#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>Home</a></li>
+          <li class="nav__item"><a href="../index.html#about" class="nav__link"><i class="uil uil-user nav__icon"></i>About</a></li>
+          <li class="nav__item"><a href="../index.html#skills" class="nav__link"><i class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+          <li class="nav__item"><a href="../index.html#qualification" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>Qualification</a></li>
+          <li class="nav__item nav__dropdown">
+            <a class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects <i class="uil uil-angle-down nav__dropdown-icon"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li class="nav__dropdown-item"><a href="loan-management.html" class="nav__dropdown-link active-link">Loan Management Portfolio</a></li>
+              <li class="nav__dropdown-item"><a href="traducode.html" class="nav__dropdown-link">TraduCode – Chrome Extension</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="../index.html#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>Contact-Me</a></li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main traducode">
+    <div class="center-wrapper">
+      <h1 class="main__title">Loan Management Automation</h1>
+      <section class="hero">
+        <div class="hero__wrap">
+          <img src="../assets/img/portfolio5.png" alt="Loan Automation Report" class="logo" />
+          <div class="what-is">
+            <h2>What is it?</h2>
+            <p class="main__description">
+              This VBA-powered system automates the generation and categorization of loan delinquency reports. It includes a user-friendly interface where staff select the report type (Past Due, Non-Accrual, etc.) and import raw data. The macro executes over 20 modular operations including filtering, restructuring, reordering, sorting, and cleanup for bank-ready outputs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gap_class">
+        <h1 class="tagline">Automation&nbsp;With&nbsp;Impact</h1>
+        <p class="gap_description">
+          Originally done manually over the course of a day, this report now completes in under 3 minutes thanks to Jardina’s custom-built `RunAll` macro. From moving the company name column and identifying duplicate loans to generating summary boxes and alphabetizing sections, every step is automated with precision. This tool laid the foundation for further automations like the UCC Report, Prudent Lender Summary, and the upcoming Board-level Concentration Report.
+        </p>
+      </section>
+
+      <section class="research-section container">
+        <h2 class="tagline">Control Panel Preview</h2>
+        <div class="research-poster">
+          <img src="../assets/img/Report_Control_Panel.png" alt="Report Control Panel UI" style="width:100%; border-radius: var(--radius);" />
+        </div>
+        <article class="research-abstract">
+          <h3 class="abstract-title">How It Works</h3>
+          <p>
+            <h4><em>After selecting the report type and importing raw data, the system begins a multi-step transformation: </em></h4>
+            <ul>
+              <li>Filters out irrelevant loans and duplicates</li>
+              <li>Reorganizes columns for standardization</li>
+              <li>Groups loans into aging sections</li>
+              <li>Moves 'Non-Accrual' loans to the bottom of the report</li>
+              <li>Highlights and repositions critical fields</li>
+              <li>Adds summary boxes and optional maturity date fields</li>
+              <li>Prepares the report for export, archiving, or printing</li>
+            </ul>
+          </p>
+        </article>
+      </section>
+
+      <section class="carousel-wrapper">
+        <h2 class="section__title">Loan Automation Features</h2>
+        <section class="carousel-container">
+          <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+          <div id="carousel" class="carousel">
+            <article class="slide active">
+              <h2>Modular RunAll Macro</h2>
+              <p>Chains over 20 individual modules to clean, organize, section, and enhance raw data into final report format.</p>
+            </article>
+            <article class="slide">
+              <h2>Sectioning by Date</h2>
+              <p>Loan records are automatically grouped into 1–30, 31–60, 61–90, Over 90 Days, Matured, and Non-Accrual buckets.</p>
+            </article>
+            <article class="slide">
+              <h2>Column Movement</h2>
+              <p>Reorganizes critical fields like Company Name, Amount Past Due, and Non-Accrual Date for clarity and logic.</p>
+            </article>
+            <article class="slide">
+              <h2>Summary Boxes</h2>
+              <p>Auto-generated boxes display totals by section, including balances, exposure, and percentage of net portfolio.</p>
+            </article>
+            <article class="slide">
+              <h2>CDC Loan Prioritization</h2>
+              <p>Non-Accrual loans are sorted to place CDC-funded accounts first—supporting audit compliance and internal reviews.</p>
+            </article>
+            <article class="slide">
+              <h2>User Interface</h2>
+              <p>A clean panel interface allows staff to choose report type and initiate automation with minimal training.</p>
+            </article>
+          </div>
+          <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+        </section>
+      </section>
+
+      <button class="peek-btn" onclick="togglePeek()">🛠 Tech Peek</button>
+      <div id="peekPanel" class="peek-panel">
+        <h3>Under the Hood</h3>
+        <ul>
+          <li><strong>Platform:</strong> Microsoft Excel + VBA</li>
+          <li><strong>Main Call:</strong> RunAll()</li>
+          <li><strong>Modules Involved:</strong> Filter, Reorganize, Module1, Module2, Module3, Module6, Module8, Module9, Module11, Module12, CurrMth, BoxOne, Alpha</li>
+          <li><strong>UI Element:</strong> Report Control Panel with Import & Type Selection</li>
+          <li><strong>Security:</strong> Local macro only; no network dependency</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Jardina</h1>
+          <span class="footer__subtitle">Information Science Engineering Student</span>
+        </div>
+        <ul class="footer__links">
+          <li><a href="#qualification" class="footer__link">Qualification</a></li>
+          <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+          <li><a href="#contact" class="footer__link">Contact-Me</a></li>
+        </ul>
+        <div class="footer__socials">
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://twitter.com/Venkateeshhh" target="__blank" class="footer__social">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; Jardina. All rights reserved</p>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <script type="text/javascript" src="../assets/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+  <script src="../assets/ptj.js"></script>
+  <script src="../assets/particles.min.js"></script>
+  <script src="../assets/particle.js"></script>
+  <script src="traducode.js"></script>
+</body>
+
+</html>
