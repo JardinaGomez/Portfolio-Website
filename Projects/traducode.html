@@ -42,10 +42,10 @@
                         <a class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects <i
                                 class="uil uil-angle-down nav__dropdown-icon"></i></a>
                         <ul class="nav__dropdown-menu">
-                            <li class="nav__dropdown-item"><a href="loan-management.html"
-                                    class="nav__dropdown-link">Loan Management Portfolio</a></li>
                             <li class="nav__dropdown-item"><a href="traducode.html"
                                     class="nav__dropdown-link active-link">TraduCode – Chrome Extension</a></li>
+                            <li class="nav__dropdown-item"><a href="loan-management.html"
+                                    class="nav__dropdown-link">Loan Management Portfolio</a></li>
                         </ul>
                     </li>
 
@@ -72,7 +72,7 @@
                     <img src="../assets/img/Traducode_FINAL.png" alt="TraduCode Logo" class="logo" />
                     <div class="what-is">
                         <h2>What is it?</h2>
-                        <p class="main__description">
+                        <p class="main__description" style="text-align: center;">
                             TraduCode was designed to be a tool to empower non-english speaking students trying to learn
                             programming.
                             It is a Chrome extension designed to translate programming syntax into the language chosen
@@ -113,7 +113,7 @@
 
             <!-- Research Section -->
             <section class="research-section container">
-                <h2 class="section__title">Research & Impact</h2>
+                <h2 class="tagline">Research & Impact</h2>
 
                 <!-- Poster Embed -->
                 <div class="research-poster">
@@ -146,65 +146,71 @@
             <!-- Second Quote -->
             <div class="quote-block">
                 <blockquote>
-                    "Barriers range from <span class="quote-key"><em>cognitive</em></span> to <span class="quote-key"><em>affective</em></span> to <span class="quote-key"><em>social</em></span>: Needing to mentally translate concepts into one’s native 
-                    language...increases extraneous cognitive load and <span style="font-size: xx-small">decreases</span> comprehension. "
+                    "Barriers range from <span class="quote-key"><em>cognitive</em></span> to <span
+                        class="quote-key"><em>affective</em></span> to <span class="quote-key"><em>social</em></span>:
+                    Needing to mentally translate concepts into one’s native
+                    language...increases extraneous cognitive load and <span
+                        style="font-size: small"><strong>decreases</strong></span> comprehension. "
                 </blockquote>
                 <cite>- UC San Diego, 2018 Study</cite>
             </div>
             <!-- TraduCode Features Carousel Section -->
             <section class="carousel-wrapper">
-                <h2 class="section__title">
+                <h2 class="tagline">
                     TraduCode Highlights
                 </h2>
-                
+
                 <section class="carousel-container">
                     <!-- Navigation buttons -->
-                  <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
+                    <button id="prevBtn" class="nav-btn"><span class="chev">&lt;</span></button>
 
 
-                <div id="carousel" class="carousel">
-                  
-                    <!-- Slide 1 -->
-                    <article class="slide active">
-                        <h2>Instant Keyword Translation</h2>
-                        <p>Hover over any Python snippet and see core syntax words translated in real
-                            time—no page reloads required.</p>
-                    </article>
-                    <!-- Slide 2 -->
-                    <article class="slide">
-                        <h2>Context-Aware Tooltips</h2>
-                        <p>TraduCode identifies code vs. comments and translates only relevant parts. Tooltips offer
-                            beginner-friendly hints without clutter.</p>
-                    </article>
-                    <!-- Slide 3 -->
-                    <article class="slide">
-                        <h2>Multi-Language Expansion</h2>
-                        <p>Started with Spanish, now expanding to French, Mandarin, and Portuguese via pluggable
-                            translation dictionaries.</p>
-                    </article>
-                    <!-- Slide 4 -->
-                    <article class="slide">
-                        <h2>Client-Side & Secure</h2>
-                        <p>Everything runs in the browser with no network calls, ensuring privacy. The extension stays
-                            lightweight—under 60 KB.</p>
-                    </article>
-                    <!-- Slide 5 -->
-                    <article class="slide">
-                        <h2>Modular Chrome Architecture</h2>
-                        <p>Popup, background, and content scripts communicate through clean message passing, ensuring
-                            maintainability and flexibility.</p>
-                    </article>
-                    <!-- Slide 6 -->
-                    <article class="slide">
-                        <h2>Scalable Design Patterns</h2>
-                        <p>Built using Strategy, Observer, Adapter, and Singleton patterns for a robust, testable, and
-                            extensible codebase.</p>
-                    </article>
+                    <div id="carousel" class="carousel">
+
+                        <!-- Slide 1 -->
+                        <article class="slide active">
+                            <h2>Instant Keyword Translation</h2>
+                            <p>Hover over any Python snippet and see core syntax words translated in real
+                                time—no page reloads required.</p>
+                        </article>
+                        <!-- Slide 2 -->
+                        <article class="slide">
+                            <h2>Context-Aware Tooltips</h2>
+                            <p>TraduCode identifies code vs. comments and translates only relevant parts. Tooltips offer
+                                beginner-friendly hints without clutter.</p>
+                        </article>
+                        <!-- Slide 3 -->
+                        <article class="slide">
+                            <h2>Multi-Language Expansion</h2>
+                            <p>Started with Spanish, now expanding to French, Mandarin, and Portuguese via pluggable
+                                translation dictionaries.</p>
+                        </article>
+                        <!-- Slide 4 -->
+                        <article class="slide">
+                            <h2>Client-Side & Secure</h2>
+                            <p>Everything runs in the browser with no network calls, ensuring privacy. The extension
+                                stays
+                                lightweight—under 60 KB.</p>
+                        </article>
+                        <!-- Slide 5 -->
+                        <article class="slide">
+                            <h2>Modular Chrome Architecture</h2>
+                            <p>Popup, background, and content scripts communicate through clean message passing,
+                                ensuring
+                                maintainability and flexibility.</p>
+                        </article>
+                        <!-- Slide 6 -->
+                        <article class="slide">
+                            <h2>Scalable Design Patterns</h2>
+                            <p>Built using Strategy, Observer, Adapter, and Singleton patterns for a robust, testable,
+                                and
+                                extensible codebase.</p>
+                        </article>
 
 
-                       </div>
-                   <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
-          </section>
+                    </div>
+                    <button id="nextBtn" class="nav-btn"><span class="chev">&gt;</span></button>
+                </section>
             </section>
 
 

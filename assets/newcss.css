@@ -54,6 +54,14 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+  --radius:100;
+}
+.tagline {
+  font-weight: 400;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 12px #00e7ff55;
+  margin-bottom: .25em;;
 }
 
 /* Font Size for larger devices */
@@ -81,7 +89,10 @@
 .center-wrapper{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .dark-theme .center-wrapper{
   background-color: rgba(11, 9, 28, 0.8);
@@ -159,6 +170,7 @@ img {
 }
 .section__title {
   font-size: var(--h1-font-size);
+  margin-bottom: 20px;
 }
 
 .section__subtitle {
@@ -169,6 +181,7 @@ img {
 .section__title,
 .section__subtitle {
   text-align: center;
+  
 }
 
 .container {
@@ -176,6 +189,17 @@ img {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
+.logo {
+  width: min(200vw, 400px);
+  filter: drop-shadow(0 0 30px #00e7ff88);
+  display: block;
+  margin-left: 15px;
+  margin-right: auto;
+  margin-bottom: 150px;
+  border-radius: var(--radius);
+
+}
+
 
 .grid {
   display: grid;
