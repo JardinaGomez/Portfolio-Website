@@ -1,0 +1,119 @@
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #23272f;
+  margin: 0;
+  padding: 0;
+}
+.case-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 32px rgba(30,60,90,0.08);
+  padding: 2.5em 1.5em 2em 1.5em;
+}
+.case-hero {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.case-hero h1 {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 0.2em;
+}
+.case-subtitle {
+  font-size: 1.1rem;
+  color: #0ea5e9;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+}
+.case-quickinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em 2em;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.case-section {
+  margin-bottom: 2.2em;
+}
+.case-section h3 {
+  color: #1976d2;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+.case-img-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+}
+.case-img-row figure {
+  margin: 0;
+  text-align: center;
+  max-width: 350px;
+}
+.case-img-row img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 1em;
+  box-shadow: 0 2px 12px #1976d211;
+  margin-bottom: 0.5em;
+}
+.case-img-row figcaption {
+  font-size: 1em;
+  color: #444;
+  background: #f7fafc;
+  border-radius: 0.7em;
+  padding: 0.9em 1em 0.9em 1em;
+  margin-top: 0.5em;
+  text-align: left;
+  box-shadow: 0 1px 4px #1976d211;
+}
+.caption-feature { color: #1976d2; font-weight: 600; }
+.caption-what { color: #0ea5e9; font-weight: 600; }
+.caption-how { color: #43a047; font-weight: 600; }
+.caption-impact { color: #fbc02d; font-weight: 600; }
+.case-featurelist {
+  list-style: disc;
+  margin-left: 1.5em;
+  color: #23272f;
+  font-size: 1.07em;
+  margin-bottom: 0;
+}
+.case-featurelist li {
+  margin-bottom: 0.6em;
+}
+.case-cta {
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+  margin: 2.5em 0 0 0;
+}
+.cta-btn {
+  background: #1976d2;
+  color: #fff;
+  padding: 0.9em 2.1em;
+  border-radius: 0.7em;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  border: none;
+  display: inline-block;
+}
+.cta-btn.secondary {
+  background: #0ea5e9;
+}
+.cta-btn:hover {
+  background: #1565c0;
+}
+@media (max-width: 900px) {
+  .case-wrapper { padding: 1.2em 0.2em 1.2em 0.2em; }
+  .case-img-row img { max-width: 98vw; }
+}

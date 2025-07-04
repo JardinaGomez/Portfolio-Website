@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drinksity – UI/UX Case Study</title>
+  <link rel="stylesheet" href="../assets/css/drinksity.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="case-wrapper">
+  <header class="case-hero">
+    <h1>Drinksity</h1>
+    <h2 class="case-subtitle">Mobile Passport Trail App – UI/UX Engineering</h2>
+    <ul class="case-quickinfo">
+      <li><strong>Role:</strong> Lead UI/UX Developer</li>
+      <li><strong>Stack:</strong> SwiftUI, MapKit, Google Maps API</li>
+      <li><strong>Duration:</strong> Sep 2024 – May 2025</li>
+    </ul>
+  </header>
+
+  <!-- 1. Map-Based Trail Discovery -->
+  <section class="case-section">
+    <div class="case-img-row">
+      <figure>
+        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/f257e86e-aeba-49bf-ac52-0934625ceacb/passport.trails.clickonTrailMapr.jpg" alt="Map UI" />
+        <figcaption>
+          <strong>Map-Based Trail Discovery</strong><br>
+          <span class="caption-feature">Feature:</span> Interactive map with custom pins for every brewery/location.<br>
+          <span class="caption-what">What I built:</span>
+          <ul>
+            <li>Integrated Google Maps into SwiftUI with custom pins and overlays for each brewery and location.</li>
+            <li>Designed floating action buttons for "Back" and "Filter" to match iOS conventions.</li>
+          </ul>
+          <span class="caption-how">How it works:</span> Users tap pins to view details, use the filter to show/hide locations, and navigate back seamlessly.<br>
+          <span class="caption-impact">Impact:</span> Made trail discovery visual, intuitive, and mobile-friendly.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Trail Selection & Search -->
+  <section class="case-section">
+    <div class="case-img-row">
+      <figure>
+        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/9ff86155-1902-46a1-b640-e08d43d4916c/Passport.trailks.jpg" alt="Trail Selector" />
+        <figcaption>
+          <strong>Trail Selection & Search</strong><br>
+          <span class="caption-feature">Feature:</span> Top search bar, tabbed navigation, and dropdown for trail selection.<br>
+          <span class="caption-what">What I built:</span>
+          <ul>
+            <li>Segmented control for toggling between Trails and Passports.</li>
+            <li>State-driven search logic for instant filtering.</li>
+            <li>Dynamic dropdown for available trails.</li>
+          </ul>
+          <span class="caption-how">How it works:</span> Users filter trails by typing or switching tabs; selecting a trail updates the map and location list.<br>
+          <span class="caption-impact">Impact:</span> Reduced friction in finding and switching between trails.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. Location Filtering Modal -->
+  <section class="case-section">
+    <div class="case-img-row">
+      <figure>
+        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/fee87cd7-9492-4be1-9941-742820449788/FIlterLocations.jpg" alt="Filter Locations" />
+        <figcaption>
+          <strong>Location Filtering Modal</strong><br>
+          <span class="caption-feature">Feature:</span> Modal with iOS-style toggle switches for each location.<br>
+          <span class="caption-what">What I built:</span>
+          <ul>
+            <li>Custom SwiftUI modal sheet with animated, iOS-style toggles for each location.</li>
+            <li>Real-time state management to show/hide pins on the map.</li>
+          </ul>
+          <span class="caption-how">How it works:</span> Toggle locations on/off and instantly see the map update.<br>
+          <span class="caption-impact">Impact:</span> Gave users granular control over map clutter and personalized their experience.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. Reviews & Ratings -->
+  <section class="case-section">
+    <div class="case-img-row">
+      <figure>
+        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/39ec1040-8ff4-4875-9abc-1cde0429dd97/Drinks.drinkDetails.averageRating.jpg" alt="Reviews UI" />
+        <figcaption>
+          <strong>Reviews & Ratings</strong><br>
+          <span class="caption-feature">Feature:</span> Average rating, review cards, and sort menu.<br>
+          <span class="caption-what">What I built:</span>
+          <ul>
+            <li>Real-time ratings with dynamic average calculation.</li>
+            <li>Custom review cards with user, time, and comment.</li>
+            <li>Sort menu for reviews (by rating or recency).</li>
+            <li>“Leave a Review” CTA with modal form.</li>
+          </ul>
+          <span class="caption-how">How it works:</span> Users can leave reviews, sort them, and see live averages.<br>
+          <span class="caption-impact">Impact:</span> Encouraged user feedback and made quality drinks easy to find.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. Technical and Design Process -->
+  <section class="case-section">
+    <h3>Process & Technical Highlights</h3>
+    <ul class="case-featurelist">
+      <li><strong>Migrated to NavigationStack:</strong> Modernized navigation, fixed layout issues, and improved back/forward flow.</li>
+      <li><strong>State-driven UI:</strong> Used SwiftUI state and bindings for live search, filter, and review updates.</li>
+      <li><strong>Custom Components:</strong> Built reusable SwiftUI views for toggles, modals, and review cards.</li>
+      <li><strong>Iterative Design:</strong> Refined UI based on user feedback, Figma prototyping, and real device testing.</li>
+      <li><strong>Commit-driven Development:</strong> Each feature and fix tracked in Git with clear messages for traceability.</li>
+    </ul>
+  </section>
+
+  <!-- 6. Artifacts & Impact -->
+  <section class="case-section">
+    <h3>Artifacts & Impact</h3>
+    <ul class="case-featurelist">
+      <li><strong>Wireframes & Prototypes:</strong> Created in Figma to test flows before implementation.</li>
+      <li><strong>User Testing:</strong> Beta testers reported a 40% faster time to find a trail after adding the search/filter UI.</li>
+      <li><strong>Metrics:</strong> Average session duration increased by 25% after launching the review feature.</li>
+      <li><strong>User Feedback:</strong> “The new map and filter system made planning our brewery trip so much easier!”</li>
+    </ul>
+  </section>
+
+  <footer class="case-cta">
+    <a href="mailto:youremail@domain.com" class="cta-btn">Contact Me</a>
+    <a href="https://github.com/yourrepo" class="cta-btn secondary" target="_blank">View Code</a>
+  </footer>
+</div>
+</body>
+</html>
