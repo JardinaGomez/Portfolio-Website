@@ -26,6 +26,11 @@ class ProjectPage extends HTMLElement {
             --aside-w: 320px;       /* sidebar width */
             --radius: 1rem;         /* border radius for images/panels*/
             }
+            /* Allow a fully-custom hero that spans full width */
+:host([hero="custom"]) header.hero { grid-template-columns: 1fr; }
+:host([hero="custom"]) header.hero > div:first-child { display: none; } /* hide default text column */
+:host([hero="custom"]) header.hero .media { grid-column: 1 / -1; }     /* make hero slot full width */
+
 
             /* Outer container */
             .wrap { max-width: var(--wrap-max); margin: 3rem auto; padding: 0 1 rem; }
@@ -147,8 +152,8 @@ class ProjectPage extends HTMLElement {
     and set up listeners to auto-hide empty sections
     */
     connectedCallback() {
-      this.render();
-      
+        this.render();
+
         // for each core section, hide if theres no slotted content 
         ['overview', 'highlights', 'challenges', 'results'].foreEach((name) => {
             const slot = this.shadowRoot.querySelector(`slor[name="${name}]`)
@@ -161,85 +166,85 @@ class ProjectPage extends HTMLElement {
         });
     }
 
-/* runs whnever a watched attribute changes (title,tags, etc) */
+    /* runs whnever a watched attribute changes (title,tags, etc) */
     attributeChangedCallback() {
         this._render(); // re-renders the component 
     }
 
     /* show/hide section based on whether it has any real content.
-    Supports force-hiding via disable="overview, results".*/ 
+    Supports force-hiding via disable="overview, results".*/
     _toggleSection(name) {
         const slot = this.shadowRoot.querySelector(`slot[name="${name}"]`);
-const sectionEl = this.shadowRoot.getElementById(`sec-${name}`);
+        const sectionEl = this.shadowRoot.getElementById(`sec-${name}`);
 
-    if (!slot || !sectionEl) return; // safety
+        if (!slot || !sectionEl) return; // safety
 
-    // Does the slot have any non-empty node?
-    const hasContent = slot
-      .assignedNodes()
-      .some((n) => (n.nodeType === Node.TEXT_NODE ? n.textContent.trim() : true));
+        // Does the slot have any non-empty node?
+        const hasContent = slot
+            .assignedNodes()
+            .some((n) => (n.nodeType === Node.TEXT_NODE ? n.textContent.trim() : true));
 
-    // Hide if empty
-    sectionEl.style.display = hasContent ? '' : 'none';
+        // Hide if empty
+        sectionEl.style.display = hasContent ? '' : 'none';
 
-    // If attribute "disable" lists this section, keep it hidden
-    const disabled = (this.getAttribute('disable') || '')
-      .split(',')
-      .map((s) => s.trim())
-      .filter(Boolean);
+        // If attribute "disable" lists this section, keep it hidden
+        const disabled = (this.getAttribute('disable') || '')
+            .split(',')
+            .map((s) => s.trim())
+            .filter(Boolean);
 
-    if (disabled.includes(name)) {
-      sectionEl.style.display = 'none';
+        if (disabled.includes(name)) {
+            sectionEl.style.display = 'none';
+        }
     }
-  }
 
-  /* Read attributes, fill in the UI, and build pills + hero fallback. */
-  _render() {
-    const $ = (sel) => this.shadowRoot.querySelector(sel);
+    /* Read attributes, fill in the UI, and build pills + hero fallback. */
+    _render() {
+        const $ = (sel) => this.shadowRoot.querySelector(sel);
 
-    // Basic text fields
-    $('.title').textContent   = this.getAttribute('title')    || '';
-    $('.subtitle').textContent= this.getAttribute('subtitle') || '';
-    $('.role').textContent    = this.getAttribute('role')     || '';
-    $('.dates').textContent   = this.getAttribute('dates')    || '';
-    $('.stack').textContent   = this.getAttribute('stack')    || '';
+        // Basic text fields
+        $('.title').textContent = this.getAttribute('title') || '';
+        $('.subtitle').textContent = this.getAttribute('subtitle') || '';
+        $('.role').textContent = this.getAttribute('role') || '';
+        $('.dates').textContent = this.getAttribute('dates') || '';
+        $('.stack').textContent = this.getAttribute('stack') || '';
 
-    // Tags → chip “pills”
-    const meta = $('.meta');
-    meta.innerHTML = ''; // clear any existing pills
-    (this.getAttribute('tags') || '')
-      .split(',')
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .forEach((t) => {
-        const pill = document.createElement('span');
-        pill.className = 'pill';
-        pill.setAttribute('part','pill'); // expose for ::part styling
-        pill.textContent = t;
-        meta.appendChild(pill);
-      });
+        // Tags → chip “pills”
+        const meta = $('.meta');
+        meta.innerHTML = ''; // clear any existing pills
+        (this.getAttribute('tags') || '')
+            .split(',')
+            .map((s) => s.trim())
+            .filter(Boolean)
+            .forEach((t) => {
+                const pill = document.createElement('span');
+                pill.className = 'pill';
+                pill.setAttribute('part', 'pill'); // expose for ::part styling
+                pill.textContent = t;
+                meta.appendChild(pill);
+            });
 
-    // Hero image fallback:
-    // - If you provided a <slot name="hero"> element in the light DOM, we use that
-    // - Otherwise, if a 'cover' URL is set, we show the <img> with that source
-    const cover = this.getAttribute('cover');
-    const customHeroProvided = this.querySelector('[slot="hero"]') != null;
-    const img = this.shadowRoot.querySelector('header.hero img');
+        // Hero image fallback:
+        // - If you provided a <slot name="hero"> element in the light DOM, we use that
+        // - Otherwise, if a 'cover' URL is set, we show the <img> with that source
+        const cover = this.getAttribute('cover');
+        const customHeroProvided = this.querySelector('[slot="hero"]') != null;
+        const img = this.shadowRoot.querySelector('header.hero img');
 
-    if (img) {
-      if (!customHeroProvided && cover) {
-        img.src = cover;
-        img.alt = this.getAttribute('title') || 'Project cover';
-        img.style.display = '';
-      } else if (!customHeroProvided && !cover) {
-        // No hero slot and no cover → hide the default img
-        img.style.display = 'none';
-      } else {
-        // You supplied your own hero slot; the slotted content shows instead
-        img.style.display = 'none';
-      }
+        if (img) {
+            if (!customHeroProvided && cover) {
+                img.src = cover;
+                img.alt = this.getAttribute('title') || 'Project cover';
+                img.style.display = '';
+            } else if (!customHeroProvided && !cover) {
+                // No hero slot and no cover → hide the default img
+                img.style.display = 'none';
+            } else {
+                // You supplied your own hero slot; the slotted content shows instead
+                img.style.display = 'none';
+            }
+        }
     }
-  }
 }
 
 /* Register the element so you can use <project-page> in HTML */

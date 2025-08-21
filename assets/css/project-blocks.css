@@ -1,0 +1,13 @@
+/* assets/css/project-blocks.css (layout only) */
+.project-wrap { max-width: 1100px; margin: 3rem auto; padding: 0 1rem; }
+.quote-block { max-width: 700px; margin: 3rem auto; padding: 1rem; }
+.peek-panel  { max-width: 680px; margin: 1.2rem auto; padding: 1.5rem; display: none; }
+.carousel-container { display:flex; gap:1rem; }
+.carousel { display:flex; overflow:hidden; width:100%; }
+.slide { flex:0 0 100%; display:none; padding:2rem; gap:1.25rem; }
+.slide.active { display:flex; }
+.nav-btn:hover { transform: scale(1.15); }
+.button, .peek-btn { display:inline-flex; align-items:center; gap:.5rem; padding:.6rem 1rem; margin:1rem 0; }
+.logo { max-width:400px; width:100%; }
+.what-is { max-width:600px; }
+@media (max-width:900px){ .project-wrap{margin:2rem auto} .slide{padding:1.25rem} }

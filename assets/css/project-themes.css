@@ -1,0 +1,13 @@
+/* Project Themes */
+.theme-tradu {
+  --accent: #00e7ff;
+  --accent-contrast: #01242a;
+  --accent-glow: 0 0 20px #00e7ff77, 0 0 40px #00e7ffaa;
+  --accent-soft: rgba(0,231,255,.12);
+}
+.theme-loan {
+  --accent: #ac0061;
+  --accent-contrast: #fff;
+  --accent-glow: 0 0 15px #7a0a40ca, 0 0 30px #4b0e34aa;
+  --accent-soft: rgba(172,0,97,.12);
+}

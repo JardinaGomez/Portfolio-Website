@@ -32,7 +32,18 @@ body {
   font-family: var(--font-family);
   padding: calc(var(--header-height) + 2rem) 1rem 6rem;
 }
-
+.logo {
+  max-width: 400px;
+  width: 100%;
+  filter: drop-shadow(0 0 30px #00e7ff88);
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  animation: pulse 6s infinite;
+}
+.what-is {
+  max-width: 600px;
+  margin-bottom: 100px;
+}
 #particles-js {
   position: fixed;
   inset: 0;
@@ -131,18 +142,7 @@ body {
   align-items: center;
 }
 
-.logo {
-  max-width: 400px;
-  width: 100%;
-  filter: drop-shadow(0 0 30px #00e7ff88);
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  animation: pulse 6s infinite;
-}
-.what-is {
-  max-width: 600px;
-  margin-bottom: 100px;
-}
+
 
 
 

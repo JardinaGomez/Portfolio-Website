@@ -1,8 +1,8 @@
 /* ===== Optimized Loan Report CSS ===== */
 :root {
-  --hue-color: 205;
+  --hue-color: 240;
 
-  --bg: hsl(var(--hue-color), 28%, 10%);
+  --bg: hsl(var(--hue-color), 28%, 12%);
   --cyan: #ac0061eb;
   --cyan-glow: 0 0 15px #7a0a40ca, 0 0 30px #4b0e34aa;
   --accent-red: #ff4040;
@@ -34,28 +34,13 @@ body {
   padding: calc(var(--header-height) + 2rem) 1rem 6rem;
 }
 
-.logo {
-  max-width: 400px;
-  width: 100%;
-  filter: drop-shadow(0 0 30px #00e7ff88);
-  margin-bottom: 2rem;
-  border-radius: var(--radius);
-  animation: pulse 6s infinite;
-}
+
 .what-is {
   max-width: 600px;
   margin-bottom: 100px;
 }
 
 /* Container & layout */
-.center-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border-radius: var(--radius);
-  box-shadow: 0 0 10px rgba(0, 231, 255, 0.1);
-}
 
 /* Typography & alignment */
 .main__title,
@@ -142,45 +127,50 @@ display: block;
   filter: drop-shadow(0 0 30px #64053adc);
   border-radius: var(--radius);
   animation: pulse 6s infinite;
+  margin-top: 7rem;
 }
 
 /* Carousel */
 .carousel-container {
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  position: relative;
 }
 
 .carousel {
-  display: flex;
-  overflow: hidden;
-  border: 2px solid var(--cyan);
+   display: flex;
+  overflow: visible;
   border-radius: var(--radius);
+  border: 2px solid var(--cyan);
   box-shadow: var(--cyan-glow);
-  width: 100%;
   animation: pulse 6s infinite;
 }
 
 .slide {
-  flex: 0 0 100%;
+  min-width: 100%;
+  padding: 3rem 2rem 4rem;
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 2rem;
-  transition: border-left 0.3s ease;
+  gap: 1.25rem;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .slide.active {
   display: flex;
-  border-left: 4px solid var(--accent-red);
+  
+}
+.slide p {
+    font-size: 1rem;
+    color: var(--text);
+    max-width: 750px;
 }
 
-.slide h2 {
+/* .slide h2 {
   font-size: 1.4rem;
   color: var(--cyan);
-}
+} */
 
 .nav-btn {
   background: transparent;
