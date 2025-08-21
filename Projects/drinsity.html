@@ -1,134 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drinksity – UI/UX Case Study</title>
+  <!-- Shared styles -->
+  <link rel="stylesheet" href="../assets/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/newcss.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <!-- Drinkity showcase styles -->
   <link rel="stylesheet" href="../assets/css/drinksity.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="case-wrapper">
-  <header class="case-hero">
-    <h1>Drinksity</h1>
-    <h2 class="case-subtitle">Mobile Passport Trail App – UI/UX Engineering</h2>
-    <ul class="case-quickinfo">
-      <li><strong>Role:</strong> Lead UI/UX Developer</li>
-      <li><strong>Stack:</strong> SwiftUI, MapKit, Google Maps API</li>
-      <li><strong>Duration:</strong> Sep 2024 – May 2025</li>
-    </ul>
+
+<body class="traducode-page" oncontextmenu="return false">
+
+  <!-- particles background -->
+  <div id="particles-js"></div>
+  <!-- ============ NAVBAR (unchanged) ============ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">Jardina Gomez</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item"><a href="../index.html#home" class="nav__link"><i
+                class="uil uil-estate nav__icon"></i>Home</a></li>
+          <li class="nav__item"><a href="../index.html#about" class="nav__link"><i
+                class="uil uil-user nav__icon"></i>About</a></li>
+          <li class="nav__item"><a href="../index.html#skills" class="nav__link"><i
+                class="uil uil-file-alt nav__icon"></i>Skills</a></li>
+          <li class="nav__item"><a href="../index.html#qualification" class="nav__link"><i
+                class="uil uil-briefcase-alt nav__icon"></i>Qualification</a></li>
+
+          <li class="nav__item nav__dropdown">
+            <a class="nav__link"><i class="uil uil-scenery nav__icon"></i>Projects <i
+                class="uil uil-angle-down nav__dropdown-icon"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li class="nav__dropdown-item"><a href="traducode.html" class="nav__dropdown-link active-link">TraduCode –
+                  Chrome Extension</a></li>
+              <li class="nav__dropdown-item"><a href="loan-management.html" class="nav__dropdown-link">Loan Management
+                  Portfolio</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item"><a href="../index.html#contact" class="nav__link"><i
+                class="uil uil-message nav__icon"></i>Contact-Me</a></li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i></div>
+      </div>
+    </nav>
   </header>
 
-  <!-- 1. Map-Based Trail Discovery -->
-  <section class="case-section">
-    <div class="case-img-row">
-      <figure>
-        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/f257e86e-aeba-49bf-ac52-0934625ceacb/passport.trails.clickonTrailMapr.jpg" alt="Map UI" />
-        <figcaption>
-          <strong>Map-Based Trail Discovery</strong><br>
-          <span class="caption-feature">Feature:</span> Interactive map with custom pins for every brewery/location.<br>
-          <span class="caption-what">What I built:</span>
-          <ul>
-            <li>Integrated Google Maps into SwiftUI with custom pins and overlays for each brewery and location.</li>
-            <li>Designed floating action buttons for "Back" and "Filter" to match iOS conventions.</li>
-          </ul>
-          <span class="caption-how">How it works:</span> Users tap pins to view details, use the filter to show/hide locations, and navigate back seamlessly.<br>
-          <span class="caption-impact">Impact:</span> Made trail discovery visual, intuitive, and mobile-friendly.
-        </figcaption>
-      </figure>
+  <!-- Main Content -->
+  <main class="main">
+    <div class="center-wrapper">
+
+      <h1 class="main__title">Drinksity – IOS Mobile App</h1>
+
+      <section class="hero">
+        <div class="hero__wrap">
+          <img src="../assets/img/drinksity-logo.png" alt="Drinksity Logo" class="logo" />
+          <div class="what-is">
+            <h2>What is it?</h2>
+            <p class="main__description" style="text-align: center;">
+              Drinksity is a craft alcohol discovery platform for users aged 21–40. I contributed extensively to the
+              user-facing side of the app, with a focus on delivering an intuitive, interactive, and accessible
+              experience. My main responsibilities involved designing and implementing UI elements that drive engagement
+              and usability while maintaining modularity with SwiftUI and MVVM principles.
+
+          </div>
+        </div>
+      </section>
+     
+
+
+
+
+
+      <!-- 1. Map-Based Trail Discovery -->
+      <section class="case-section">
+        <div class="case-img-row">
+          <figure>
+            <img
+              src="../assets/img/passport.trails.clickonTrailMapr.png"
+              alt="Map UI" />
+            <figcaption>
+              <strong>Map-Based Trail Discovery</strong><br>
+              <span class="caption-feature">Feature:</span> Interactive map with custom pins for every
+              brewery/location.<br>
+              <span class="caption-what">What I built:</span>
+              <ul>
+                <li>Integrated Google Maps into SwiftUI with custom pins and overlays for each brewery and location.
+                </li>
+                <li>Designed floating action buttons for "Back" and "Filter" to match iOS conventions.</li>
+              </ul>
+              <span class="caption-how">How it works:</span> Users tap pins to view details, use the filter to show/hide
+              locations, and navigate back seamlessly.<br>
+              <span class="caption-impact">Impact:</span> Made trail discovery visual, intuitive, and mobile-friendly.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 2. Trail Selection & Search -->
+      <section class="case-section">
+        <div class="case-img-row">
+          <figure>
+            <img
+              src="../assets/img/Passport.trails.png"
+              alt="Trail Selector" />
+            <figcaption>
+              <strong>Trail Selection & Search</strong><br>
+              <span class="caption-feature">Feature:</span> Top search bar, tabbed navigation, and dropdown for trail
+              selection.<br>
+              <span class="caption-what">What I built:</span>
+              <ul>
+                <li>Segmented control for toggling between Trails and Passports.</li>
+                <li>State-driven search logic for instant filtering.</li>
+                <li>Dynamic dropdown for available trails.</li>
+              </ul>
+              <span class="caption-how">How it works:</span> Users filter trails by typing or switching tabs; selecting
+              a
+              trail updates the map and location list.<br>
+              <span class="caption-impact">Impact:</span> Reduced friction in finding and switching between trails.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 3. Location Filtering Modal -->
+      <section class="case-section">
+        <div class="case-img-row">
+          <figure>
+            <img
+              src="../assets/img/FilterLocations.png"
+              alt="Filter Locations" />
+            <figcaption>
+              <strong>Location Filtering Modal</strong><br>
+              <span class="caption-feature">Feature:</span> Modal with iOS-style toggle switches for each location.<br>
+              <span class="caption-what">What I built:</span>
+              <ul>
+                <li>Custom SwiftUI modal sheet with animated, iOS-style toggles for each location.</li>
+                <li>Real-time state management to show/hide pins on the map.</li>
+              </ul>
+              <span class="caption-how">How it works:</span> Toggle locations on/off and instantly see the map
+              update.<br>
+              <span class="caption-impact">Impact:</span> Gave users granular control over map clutter and personalized
+              their experience.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 4. Reviews & Ratings -->
+      <section class="case-section">
+        <div class="case-img-row">
+          <figure>
+            <img
+              src="../assets/img/Drinks.drinkDetails.averageRating.png"
+              alt="Reviews UI" />
+            <figcaption>
+              <strong>Reviews & Ratings</strong><br>
+              <span class="caption-feature">Feature:</span> Average rating, review cards, and sort menu.<br>
+              <span class="caption-what">What I built:</span>
+              <ul>
+                <li>Real-time ratings with dynamic average calculation.</li>
+                <li>Custom review cards with user, time, and comment.</li>
+                <li>Sort menu for reviews (by rating or recency).</li>
+                <li>“Leave a Review” CTA with modal form.</li>
+              </ul>
+              <span class="caption-how">How it works:</span> Users can leave reviews, sort them, and see live
+              averages.<br>
+              <span class="caption-impact">Impact:</span> Encouraged user feedback and made quality drinks easy to find.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 5. Technical and Design Process -->
+      <section class="case-section">
+        <h3>Process & Technical Highlights</h3>
+        <ul class="case-featurelist">
+          <li><strong>Migrated to NavigationStack:</strong> Modernized navigation, fixed layout issues, and improved
+            back/forward flow.</li>
+          <li><strong>State-driven UI:</strong> Used SwiftUI state and bindings for live search, filter, and review
+            updates.</li>
+          <li><strong>Custom Components:</strong> Built reusable SwiftUI views for toggles, modals, and review cards.
+          </li>
+          <li><strong>Iterative Design:</strong> Refined UI based on user feedback, Figma prototyping, and real device
+            testing.</li>
+          <li><strong>Commit-driven Development:</strong> Each feature and fix tracked in Git with clear messages for
+            traceability.</li>
+        </ul>
+      </section>
+
+      <!-- 6. Artifacts & Impact -->
+      <section class="case-section">
+        <h3>Artifacts & Impact</h3>
+        <ul class="case-featurelist">
+          <li><strong>Wireframes & Prototypes:</strong> Created in Figma to test flows before implementation.</li>
+          <li><strong>User Testing:</strong> Beta testers reported a 40% faster time to find a trail after adding the
+            search/filter UI.</li>
+          <li><strong>Metrics:</strong> Average session duration increased by 25% after launching the review feature.
+          </li>
+          <li><strong>User Feedback:</strong> “The new map and filter system made planning our brewery trip so much
+            easier!”</li>
+        </ul>
+      </section>
     </div>
-  </section>
+    </main>
+      <!--================== Footer ===============-->
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h1 class="footer__title">Jardina</h1>
+              <span class="footer__subtitle">Information Science Engineering Student</span>
+            </div>
 
-  <!-- 2. Trail Selection & Search -->
-  <section class="case-section">
-    <div class="case-img-row">
-      <figure>
-        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/9ff86155-1902-46a1-b640-e08d43d4916c/Passport.trailks.jpg" alt="Trail Selector" />
-        <figcaption>
-          <strong>Trail Selection & Search</strong><br>
-          <span class="caption-feature">Feature:</span> Top search bar, tabbed navigation, and dropdown for trail selection.<br>
-          <span class="caption-what">What I built:</span>
-          <ul>
-            <li>Segmented control for toggling between Trails and Passports.</li>
-            <li>State-driven search logic for instant filtering.</li>
-            <li>Dynamic dropdown for available trails.</li>
-          </ul>
-          <span class="caption-how">How it works:</span> Users filter trails by typing or switching tabs; selecting a trail updates the map and location list.<br>
-          <span class="caption-impact">Impact:</span> Reduced friction in finding and switching between trails.
-        </figcaption>
-      </figure>
+            <ul class="footer__links">
+              <li>
+                <a href="#qualification" class="footer__link">Qualification</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer__link">Contact-Me</a>
+              </li>
+            </ul>
+
+            <div class="footer__socials">
+              <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="https://twitter.com/Venkateeshhh" target="__blank" class="footer__social">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="footer__copy">&#169; Jardina. All right reserved</p>
+        </div>
+      </footer>
+
     </div>
-  </section>
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
-  <!-- 3. Location Filtering Modal -->
-  <section class="case-section">
-    <div class="case-img-row">
-      <figure>
-        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/fee87cd7-9492-4be1-9941-742820449788/FIlterLocations.jpg" alt="Filter Locations" />
-        <figcaption>
-          <strong>Location Filtering Modal</strong><br>
-          <span class="caption-feature">Feature:</span> Modal with iOS-style toggle switches for each location.<br>
-          <span class="caption-what">What I built:</span>
-          <ul>
-            <li>Custom SwiftUI modal sheet with animated, iOS-style toggles for each location.</li>
-            <li>Real-time state management to show/hide pins on the map.</li>
-          </ul>
-          <span class="caption-how">How it works:</span> Toggle locations on/off and instantly see the map update.<br>
-          <span class="caption-impact">Impact:</span> Gave users granular control over map clutter and personalized their experience.
-        </figcaption>
-      </figure>
-    </div>
-  </section>
 
-  <!-- 4. Reviews & Ratings -->
-  <section class="case-section">
-    <div class="case-img-row">
-      <figure>
-        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/58119218/39ec1040-8ff4-4875-9abc-1cde0429dd97/Drinks.drinkDetails.averageRating.jpg" alt="Reviews UI" />
-        <figcaption>
-          <strong>Reviews & Ratings</strong><br>
-          <span class="caption-feature">Feature:</span> Average rating, review cards, and sort menu.<br>
-          <span class="caption-what">What I built:</span>
-          <ul>
-            <li>Real-time ratings with dynamic average calculation.</li>
-            <li>Custom review cards with user, time, and comment.</li>
-            <li>Sort menu for reviews (by rating or recency).</li>
-            <li>“Leave a Review” CTA with modal form.</li>
-          </ul>
-          <span class="caption-how">How it works:</span> Users can leave reviews, sort them, and see live averages.<br>
-          <span class="caption-impact">Impact:</span> Encouraged user feedback and made quality drinks easy to find.
-        </figcaption>
-      </figure>
-    </div>
-  </section>
+    <!-- ============ SHARED SCRIPTS ============ -->
+    <script type="text/javascript" src="../assets/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="../assets/ptj.js"></script>
 
-  <!-- 5. Technical and Design Process -->
-  <section class="case-section">
-    <h3>Process & Technical Highlights</h3>
-    <ul class="case-featurelist">
-      <li><strong>Migrated to NavigationStack:</strong> Modernized navigation, fixed layout issues, and improved back/forward flow.</li>
-      <li><strong>State-driven UI:</strong> Used SwiftUI state and bindings for live search, filter, and review updates.</li>
-      <li><strong>Custom Components:</strong> Built reusable SwiftUI views for toggles, modals, and review cards.</li>
-      <li><strong>Iterative Design:</strong> Refined UI based on user feedback, Figma prototyping, and real device testing.</li>
-      <li><strong>Commit-driven Development:</strong> Each feature and fix tracked in Git with clear messages for traceability.</li>
-    </ul>
-  </section>
 
-  <!-- 6. Artifacts & Impact -->
-  <section class="case-section">
-    <h3>Artifacts & Impact</h3>
-    <ul class="case-featurelist">
-      <li><strong>Wireframes & Prototypes:</strong> Created in Figma to test flows before implementation.</li>
-      <li><strong>User Testing:</strong> Beta testers reported a 40% faster time to find a trail after adding the search/filter UI.</li>
-      <li><strong>Metrics:</strong> Average session duration increased by 25% after launching the review feature.</li>
-      <li><strong>User Feedback:</strong> “The new map and filter system made planning our brewery trip so much easier!”</li>
-    </ul>
-  </section>
 
-  <footer class="case-cta">
-    <a href="mailto:youremail@domain.com" class="cta-btn">Contact Me</a>
-    <a href="https://github.com/yourrepo" class="cta-btn secondary" target="_blank">View Code</a>
-  </footer>
-</div>
+    <!-- Particles.js library and configuration -->
+    <script src="../assets/particles.min.js"></script>
+    <script src="../assets/particle.js"></script>
 </body>
+
 </html>
