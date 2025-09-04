@@ -14,11 +14,11 @@
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --title-color: hsl(var(--hue-color), 8%, 15%); /* dark text color for light mode */
+  --text-color: hsl(var(--hue-color), 8%, 45%); /* medium grey text color for light mode */
+  --text-color-light: hsl(var(--hue-color), 8%, 65%); /* light grey text color for light mode */
+  --input-color: hsl(var(--hue-color), 70%, 96%); /* light input color for light mode */
+  --body-color: hsl(var(--hue-color), 60%, 99%); /* light body color for light mode */
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -910,7 +910,9 @@ img {
 }
 
 .footer__links {
+  
   display: flex;
+  width: max-content;
   flex-direction: column;
   row-gap: 1.5rem;
 }

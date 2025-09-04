@@ -2,11 +2,11 @@
 :root {
   --hue-color: 240;
 
-  --bg: hsl(var(--hue-color), 28%, 12%);
+    --bg: hsl(var(--hue-color), 28%, 12%);
   --cyan: #ac0061eb;
   --cyan-glow: 0 0 15px #7a0a40ca, 0 0 30px #4b0e34aa;
   --accent-red: #ff4040;
-  --text: #f3f3f3;
+  
   --radius: 1.25rem;
   --font-family: "Poppins", sans-serif;
   --header-height: 4rem;
@@ -28,10 +28,10 @@ body {
   overflow-y: auto;
   scroll-behavior: smooth;
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: var(--body-color);
+  color: var(--text-color);
   font-family: var(--font-family);
-  padding: calc(var(--header-height) + 2rem) 1rem 6rem;
+  padding: calc(var(--header-height) + 2rem) 0 0 0;
 }
 
 

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-/* ===== Optimized TraduCode CSS ===== */
+
+/* ===== Drinksity Project CSS ===== */
 :root {
   --hue-color: 240;
 
@@ -7,7 +8,6 @@
   --orng: #ffaa00;
   --orng-glow: 0 0 20px #ffaa0077, 0 0 40px #ffaa00aa;
   --accent-red: #ff4040;
-  --text: #dfe9f3;
   --radius: 1.25rem;
   --font-family: "Poppins", sans-serif;
   --header-height: 4rem;
@@ -19,20 +19,24 @@
 *::after {
   box-sizing: border-box;
 }
+
 .main__title {
   font-family: var(--font-family);
   place-self: center;
   padding: 1rem 1rem 1rem;
 }
+
 body {
   overflow-y: auto;
   scroll-behavior: smooth;
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  /* Use theme system variables instead of hardcoded values */
+  background: var(--body-color);
+  color: var(--text-color);
   font-family: var(--font-family);
-  padding: calc(var(--header-height) + 2rem) 1rem 6rem;
+  padding: calc(var(--header-height) + 2rem) 0 0 0;
 }
+
 .drinksity-logo {
   max-width: 200px;
   width: 100%;
@@ -41,11 +45,13 @@ body {
   border-radius: var(--radius);
   animation: pulse 6s infinite;
 }
+
 .what-is {
   max-width: 600px;
   margin-bottom: 100px;
 }
-#particles-js {
+
+/* #particles-js {
   position: fixed;
   inset: 0;
   height: 100vh;
@@ -53,7 +59,7 @@ body {
   z-index: -1;
   pointer-events: none;
   background: transparent;
-}
+} */
 
 /* Section Styling */
 .research-section,
@@ -62,6 +68,7 @@ body {
   text-align: center;
   margin-top: 3rem;
 }
+
 .poster-title,
 .abstract-title,
 .tc-hero__headline,
@@ -76,7 +83,7 @@ body {
 .tc-slide {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 7rem;
   justify-content: center;
   align-items: center;
 }
@@ -89,29 +96,34 @@ body {
   line-height: 1.6;
   text-align: left;
 }
+
 .case-wrapper {
   max-width: 700px;
   margin: 0 auto;
   background: #fff;
   border-radius: 1.5em;
-  box-shadow: 0 4px 32px rgba(30,60,90,0.08);
+  box-shadow: 0 4px 32px rgba(30, 60, 90, 0.08);
   padding: 2.5em 1.5em 2em 1.5em;
 }
+
 .case-hero {
   text-align: center;
   margin-bottom: 2.5em;
 }
+
 .case-hero h1 {
   font-size: 2.5rem;
   color: #1976d2;
   margin-bottom: 0.2em;
 }
+
 .case-subtitle {
   font-size: 1.1rem;
   color: #0ea5e9;
   font-weight: 500;
   margin-bottom: 1.2em;
 }
+
 .case-quickinfo {
   display: flex;
   flex-wrap: wrap;
@@ -123,25 +135,30 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .case-section {
   margin-bottom: 2.2em;
 }
+
 .case-section h3 {
   color: #1976d2;
   font-size: 1.25rem;
   margin-bottom: 1em;
 }
+
 .case-img-row {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5em;
   justify-content: center;
 }
+
 .case-img-row figure {
   margin: 0;
   text-align: center;
   max-width: 350px;
 }
+
 .case-img-row img {
   max-width: 320px;
   width: 100%;
@@ -149,6 +166,7 @@ body {
   box-shadow: 0 2px 12px #1976d211;
   margin-bottom: 0.5em;
 }
+
 .case-img-row figcaption {
   font-size: 1em;
   color: #444;
@@ -159,10 +177,27 @@ body {
   text-align: left;
   box-shadow: 0 1px 4px #1976d211;
 }
-.caption-feature { color: #1976d2; font-weight: 600; }
-.caption-what { color: #0ea5e9; font-weight: 600; }
-.caption-how { color: #43a047; font-weight: 600; }
-.caption-impact { color: #fbc02d; font-weight: 600; }
+
+.caption-feature {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.caption-what {
+  color: #0ea5e9;
+  font-weight: 600;
+}
+
+.caption-how {
+  color: #43a047;
+  font-weight: 600;
+}
+
+.caption-impact {
+  color: #fbc02d;
+  font-weight: 600;
+}
+
 .case-featurelist {
   list-style: disc;
   margin-left: 1.5em;
@@ -170,34 +205,55 @@ body {
   font-size: 1.07em;
   margin-bottom: 0;
 }
+
 .case-featurelist li {
   margin-bottom: 0.6em;
 }
+
 .case-cta {
   display: flex;
   gap: 1.2em;
   justify-content: center;
   margin: 2.5em 0 0 0;
 }
-.skills_container-col{
+
+.skills_container-col {
   column-gap: 0;
 }
-.role-line { text-align:center; margin-top: .5rem; opacity:.85; }
+
+.role-line {
+  text-align: center;
+  margin-top: .5rem;
+  opacity: .85;
+}
 
 /* Accordions look like “Skills” but wrapped in rounded panels */
 .drinksity-accordions .skills__content {
   border-radius: 24px;
-  background: rgba(255,255,255,0.03);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   padding: 1rem 1rem 0.25rem 1rem;
 }
-.drinksity-accordions .skills__content + .skills__content { margin-top: 1rem; }
-.drinksity-accordions .skills__header { padding: .5rem .25rem; }
-.drinksity-accordions .skills__list.grid { grid-template-columns: 1fr 1fr; }
+
+.drinksity-accordions .skills__content+.skills__content {
+  margin-top: 1rem;
+}
+
+.drinksity-accordions .skills__header {
+  padding: .5rem .25rem;
+}
+
+.drinksity-accordions .skills__list.grid {
+  grid-template-columns: 1fr 1fr;
+}
 
 .cta-row {
-  display:flex; gap:.75rem; justify-content:center; margin-top:1rem;
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
+
 .cta-btn {
   background: #1976d2;
   color: #fff;
@@ -210,31 +266,43 @@ body {
   border: none;
   display: inline-block;
 }
+
 .cta-btn.secondary {
   background: #0ea5e9;
 }
+
 .cta-btn:hover {
   background: #1565c0;
 }
-.feature_header{
+
+.feature_header {
   font-weight: bold;
   color: #5757e0
 }
 
 /* Carousel copy column */
-.project__features { margin-left: 1rem; line-height: 1.6; }
-.project__features li { margin-bottom: .35rem; }
+.project__features {
+  margin-left: 1rem;
+  line-height: 1.6;
+}
+
+.project__features li {
+  margin-bottom: .35rem;
+}
 
 /* Poster block */
 .poster__container {
-  display: flex; justify-content: center; align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0 1rem;
 }
+
 .poster__img {
   width: min(100%, 980px);
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(0,0,0,.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .25);
 }
 
 .page__title {
@@ -242,30 +310,51 @@ body {
   margin-bottom: 3rem;
   text-decoration: underline;
   text-align: center;
-  
+
 }
+
+.user-centered-design-section {
+  margin-bottom: 4rem;
+}
+
 /* Better spacing on slides for large screens */
 @media (min-width: 992px) {
   .portfolio__content.grid {
     grid-template-columns: 1fr 1.2fr;
     align-items: center;
   }
-  .portfolio__img { max-width: 480px; justify-self: center; }
+
+  .portfolio__img {
+    max-width: 480px;
+    justify-self: center;
+  }
 }
 
 /* minor polish */
-.section__title + .section__subtitle { margin-top: .25rem; }
-.project__intro .main__description { margin-top:.5rem; }
-@media (max-width: 900px) {
-  .case-wrapper { padding: 1.2em 0.2em 1.2em 0.2em; }
-  .case-img-row img { max-width: 98vw; }
+.section__title+.section__subtitle {
+  margin-top: .25rem;
 }
+
+.project__intro .main__description {
+  margin-top: .5rem;
+}
+
+@media (max-width: 900px) {
+  .case-wrapper {
+    padding: 1.2em 0.2em 1.2em 0.2em;
+  }
+
+  .case-img-row img {
+    max-width: 98vw;
+  }
+}
+
 /* Peek Panel */
 .peek-panel {
   max-width: 680px;
   margin: 1.2rem auto;
   padding: 1.5rem;
-  background: #112531;
+  background: var(--container-color);
   border: 1px solid rgba(0, 231, 255, 0.27);
   border-radius: var(--radius);
   display: none;
@@ -273,6 +362,7 @@ body {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+
   .tc-hero,
   .tc-slide,
   .hero__wrap {
@@ -287,6 +377,13 @@ body {
 
 /* Glow Animation */
 @keyframes pulse {
-  0%, 100% { box-shadow: var(--orng-glow); }
-  50% { box-shadow: 0 0 10px #ffaa0044, 0 0 20px #ffaa0088; }
+
+  0%,
+  100% {
+    box-shadow: var(--orng-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 10px #ffaa0044, 0 0 20px #ffaa0088;
+  }
 }
