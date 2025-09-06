@@ -60,7 +60,7 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active')
     })
 })      
-*/
+
 
 /*======================= Services Modal ===================*/
 const modalViews = document.querySelectorAll(".services__modal"),
@@ -88,7 +88,7 @@ modalCloses.forEach((modalClose) => {
 /*======================= Portfolio Swiper ===================*/
 var swiper = new Swiper(".portfolio__container", {
   cssMode: true,
-  loop: true,
+  loop: false,
 
   navigation: {
     nextEl: ".swiper-button-next",

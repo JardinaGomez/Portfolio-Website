@@ -75,11 +75,10 @@
                 <section class="gap_class">
                     <h1 class="tagline">Automation&nbsp;With&nbsp;Impact</h1>
                     <p class="gap_description">
-                        Originally done manually over the course of a day, this report now completes in under 3 minutes
-                        thanks to Jardina’s custom-built `RunAll` macro. From moving the company name column and
-                        identifying duplicate loans to generating summary boxes and alphabetizing sections, every step
-                        is automated with precision. This tool laid the foundation for further automations like the UCC
-                        Report, Prudent Lender Summary, and the upcoming Board-level Concentration Report.
+                      A once time-intensive manual process was transformed into a streamlined workflow that now runs in just minutes. 
+                      By designing a custom macro to automate everything from data preparation to report organization, it now ensures 
+                      speed, consistency, and accuracy. This project not only improved day-to-day efficieny but also set the stage for 
+                      broader reporting automations across an organization. 
                     </p>
                 </section>
             </section>
@@ -97,7 +96,7 @@
                     <ul>
                         <li>Filters out irrelevant loans and duplicates</li>
                         <li>Reorganizes columns for standardization</li>
-                        <li>Groups loans into aging sections</li>
+                        <li>Groups loans into past-due sections</li>
                         <li>Moves 'Non-Accrual' loans to the bottom of the report</li>
                         <li>Highlights and repositions critical fields</li>
                         <li>Adds summary boxes and optional maturity date fields</li>
@@ -133,9 +132,9 @@
                                 percentage of net portfolio.</p>
                         </article>
                         <article class="slide">
-                            <h2>CDC Loan Prioritization</h2>
-                            <p>Non-Accrual loans are sorted to place CDC-funded accounts first—supporting audit
-                                compliance and internal reviews.</p>
+                            <h2>Loan Prioritization</h2>
+                            <p>Non-Accrual loans are sorted to place loans with the most recent Non-Accrual Date at the top,
+                                 ensuring critical accounts are reviewed first.</p>
                         </article>
                         <article class="slide">
                             <h2>User Interface</h2>
@@ -153,8 +152,8 @@
                 <ul>
                     <li><strong>Platform:</strong> Microsoft Excel + VBA</li>
                     <li><strong>Main Call:</strong> RunAll()</li>
-                    <li><strong>Modules Involved:</strong> Filter, Reorganize, Module1, Module2, Module3, Module6,
-                        Module8, Module9, Module11, Module12, CurrMth, BoxOne, Alpha</li>
+                    <!-- <li><strong>Modules Involved:</strong> Filter, Reorganize, Module1, Module2, Module3, Module6,
+                        Module8, Module9, Module11, Module12, CurrMth, BoxOne, Alpha</li> -->
                     <li><strong>UI Element:</strong> Report Control Panel with Import & Type Selection</li>
                     <li><strong>Security:</strong> Local macro only; no network dependency</li>
                 </ul>
